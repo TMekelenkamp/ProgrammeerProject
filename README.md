@@ -1,7 +1,7 @@
 # Programmeer project
 Thom Mekelenkamp - 11167998
 
-# Index:
+# Index
 - Doel
 - Ontwerp
 - Schets
