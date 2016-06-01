@@ -1,3 +1,6 @@
+window.onload = visual;
+
+function visual(){
 // settings for the map
 var map = new Datamap({element: document.getElementById('map'),
 setProjection: function(element) {
@@ -14,6 +17,10 @@ setProjection: function(element) {
     return {path: path, projection: projection};
   },
     fills: {
-        defaultFill: 'rgba(115,115,115,0.2)'
+        defaultFill: 'rgba(0,0,200,0.4)'
     }
-    });
+});
+var data = "lalalalalalalla";
+scatter(data);
+
+}

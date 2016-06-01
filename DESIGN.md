@@ -22,15 +22,22 @@ Comparison:
 - dropdown to change the data from Co2 to temperature or life expectancy
 
 # Advanced sketches
-![Foto van eerste schets](doc/advanced_1.png)
-![Foto van eerste schets](doc/advanced_2.png)
-![Foto van eerste schets](doc/advanced_3.png)
-![Foto van eerste schets](doc/advanced_4.png)
+![Advanced sketch 1](doc/advanced_1.png)
+![Advanced sketch 2](doc/advanced_2.png)
+![Advanced sketch 3](doc/advanced_3.png)
+![Advanced sketch 4](doc/advanced_4.png)
 
 
 # Libraries
 For this project I will be using the following library;
-- D3 main library
+- D3 main library:
+  http://d3js.org/d3.v3.min.js
+- D3 library for the map and topo options
+  https://raw.githubusercontent.com/markmarkoh/datamaps/master/dist/datamaps.world.min.js
+  http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js
+  http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js
+- D3 library for the tooltips
+  http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
 
 # Data sources
 Temperature data:
