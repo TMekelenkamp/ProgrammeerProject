@@ -22,6 +22,11 @@ Comparison:
 - dropdown to change the data from Co2 to temperature or life expectancy
 
 # Advanced sketches
+![Foto van eerste schets](doc/advanced_1.png)
+![Foto van eerste schets](doc/advanced_2.png)
+![Foto van eerste schets](doc/advanced_3.png)
+![Foto van eerste schets](doc/advanced_4.png)
+
 
 # Libraries
 For this project I will be using the following library;
