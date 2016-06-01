@@ -16,7 +16,7 @@ Scatterplot:
 - Change the data of the plot with data from different years
 - change the variables from life expectancy to temperature or the other way round
 
-Comparisson:
+Comparison:
 - Form that asks for 2 country names
 - Barchart with Co2 data from the 2 countries
 - dropdown to change the data from Co2 to temperature or life expectancy
