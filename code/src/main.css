@@ -7,21 +7,16 @@
   hieght: 480px;
   border-style: solid;
 }*/
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:100px;
-    float:left;
-    padding:5px;
-}
-#section {
-    width:350px;
-    float:left;
-    padding:10px;
+#map {
+    float: left;
 }
 #buttons {
+    width:500px;
+    float:right;
+    padding:10px;
+}
+/*#buttons {
     width:350px;
     float:left;
     padding:50px;
-}
+}*/

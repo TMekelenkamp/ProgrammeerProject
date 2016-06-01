@@ -41,12 +41,15 @@ For this project I will be using the following library;
 
 # Data sources
 Temperature data:
+https://weatherspark.com
 http://www.eea.europa.eu/data-and-maps/data/external/european-climate-assessment-dataset-eca-d
 
 Co2 data:
+http://data.worldbank.org/indicator/EN.ATM.CO2E.KT/countries/1W?display=default
 http://ec.europa.eu/eurostat/statistics-explained/index.php/Greenhouse_gas_emission_statistics
 
 Life expectancy data:
+http://data.worldbank.org/indicator/SP.DYN.LE00.IN/countries?display=default
 http://ec.europa.eu/eurostat/statistics-explained/index.php/Mortality_and_life_expectancy_statistics#Source_data_for_tables_and_figures_.28MS_Excel.29
 
 # Database
