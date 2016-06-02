@@ -12,3 +12,10 @@ functie{
 - hoverinfo
 - findCountry
 }
+
+### voorbeeld stukje voor het updaten van de map ipv constant nieuwe plaatsen
+d3.select('#update').on('click', function(e) {
+        defaultData.USA.fillKey = 'gt50';
+        defaultData.RUS.color = 'blue';
+        map.updateChoropleth(defaultData);
+      });;
