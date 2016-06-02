@@ -1,26 +1,30 @@
-window.onload = visual;
+var input = "../dataset/temperature.json";
+var tag = 'temp';
+function emission(){
+  tag = 'emission';
+  visual(input, tag);
+  input = "../dataset/emission.json";
+}
+function temp(){
+  tag = 'temp';
+  visual(input, tag);
+  input = "../dataset/temperature.json";
+}
+function life(){
+  tag = 'life';
+  visual(input, tag);
+  input = "../dataset/life.json";
+}
 
-function visual(){
-// settings for the map
-var map = new Datamap({element: document.getElementById('map'),
-setProjection: function(element) {
-    var projection = d3.geo.equirectangular()
-      .center([23, -3])
-      .rotate([4.4, 0])
-      .scale(600)
-      .translate([element.offsetWidth / 2, element.offsetHeight + 200]);
-      console.log([element.offsetWidth / 2]);
-      console.log([element.offsetHeight / 2]);
-    var path = d3.geo.path()
-      .projection(projection);
+visual(input,tag);
 
-    return {path: path, projection: projection};
-  },
-    fills: {
-        defaultFill: 'rgba(0,0,200,0.4)'
-    }
+function visual(input, tag){
+
+  d3.json(input, function(error, data){
+  if (error) {return console.warn(error)};
+
+  var data = data.json
+
+  line(data, tag);
 });
-var data = "lalalalalalalla";
-scatter(data);
-
 }

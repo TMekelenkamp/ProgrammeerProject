@@ -1,0 +1,14 @@
+Kaart:
+maken van 3 kaarten en dan voor iedere kaart een andere file maken
+
+lifeMap.js
+emissionMap.js
+temperatureMap.js
+
+-----------------
+functie{
+- inladen
+- kleuren bepalen
+- hoverinfo
+- findCountry
+}
