@@ -1,8 +1,45 @@
-#map {
+#mapButtons {
     float: left;
 }
-#buttons {
-    width:500px;
-    float:right;
-    padding:10px;
+.buttons {
+    position: : top;
+    float: right;
+    padding-top: :200px;
+}
+.datamaps-legend {
+    margin-top: 180px;
+    text-align: : center;
+    right: -50px;
+    top: 0;
+}
+h1 {
+	text-align: center;
+	font-family: arial;
+}
+.button1, .button2, .button3 {
+    /*float: right;*/
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+}
+.button1:hover, .button2:hover, .button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.button1 {
+    background-color: #238443;
+}
+.button2 {
+    background-color: #e31a1c;
+}
+.button3 {
+    background-color: #ce1256;
+}
+.map {
+  background-color: rgba(0, 77, 153,0.5);
+  margin-top: 100px;
 }

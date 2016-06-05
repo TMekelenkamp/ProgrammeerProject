@@ -1,7 +1,14 @@
 function life(){
 
+
   d3.json("../dataset/life.json", function(error, data){
   if (error) {return console.warn(error)};
+
+
+      var div = d3.select('.map')
+          .attr('id', 'container')
+
+      div.selectAll('*').remove();
 
       var data = data.json
       console.log(data[0].country)
@@ -27,7 +34,7 @@ function life(){
               color = 'data4';
           }
           else {
-               color = 'rgba(0,100,0,0.8)';
+               color = 'defaultFill';
           }
           dataList[code] = {country: data[i].country, capital: data[i].capital ,
           tens: data[i].tens, zeros: data[i].zeros,
@@ -35,7 +42,7 @@ function life(){
           }
 
 // settings for the map
-var map = new Datamap({element: document.getElementById('map'),
+var map = new Datamap({element: document.getElementById('container'),
 setProjection: function(element) {
     var projection = d3.geo.equirectangular()
       .center([15, 10])
@@ -52,7 +59,7 @@ setProjection: function(element) {
         data2: '#d7b5d8',
         data3: '#df65b0',
         data4: '#ce1256',
-        defaultFill: 'rgba(0,100,0,0.4)'
+        defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,
     done: function(datamap) {
@@ -68,7 +75,8 @@ setProjection: function(element) {
           ' <br>1990: ' + dataList.nineties +
           ' <br>1980: ' + dataList.eighties +
           ' </div>'].join('');
-      }
+      },
+      popupOnHover: true,
     }
   });
 

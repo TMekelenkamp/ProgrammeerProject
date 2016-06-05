@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <h2>Thom Mekelenkamp - 11167998</h2>
+  <h1><br>Thom Mekelenkamp - 11167998</br>
+  <br>The impact of Co2 emissions in Europe from 1980 - 2010</br></h1>
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
   <script src="../sources/datamaps.world.min.js"></script>
@@ -13,12 +14,11 @@
   <script src="scatter.js"></script>
 </head>
 <body>
-  <!-- <div id="map" style="width: 720px; height: 480px;"></div> -->
-  <div id="map" style="position: center; width: 800px; height: 500px;"></div>
-  <div id="buttons">
-    <br><input id="button1" type="submit" name="button1" value="Co2 emissie" onclick="emission();"/></br>
-    <br><input id="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" /></br>
-    <br><input id="button3" type="submit" name="button3" value="Levensverwachting" onclick="life();" /></br>
+  <div class="mapButtons">
+  <div class="map" style=" width: 800px; height: 500px;"></div>
+  <br><input class="button1" type="submit" name="button1" value="Co2 emission" onclick="emission();"/></br>
+  <br><input class="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" /></br>
+  <br><input class="button3" type="submit" name="button3" value="Life expectancy" onclick="life();" /></br>
   </div>
 </body>
 </html>

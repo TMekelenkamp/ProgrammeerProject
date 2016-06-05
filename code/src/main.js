@@ -1,14 +1,15 @@
-function temperature(){
-  temperature();
-}
+// function map1(){
+//   temperature();
+// }
+//
+// function map2(){
+//   life();
+// }
+//
+// function map3(){
+//   emission();
+// }
 
-function life(){
-  life();
-}
-
-function emission(){
-  emission();
-}
 
 
 // var input = "../dataset/temperature.json";

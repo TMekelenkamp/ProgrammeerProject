@@ -6,6 +6,11 @@ function temperature(){
       var data = data.json
       console.log(data[0].country)
 
+      var div = d3.select('.map')
+          .attr('id', 'container')
+
+      div.selectAll('*').remove();
+
       var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
       // store the data from the json in a usable variable
@@ -27,7 +32,7 @@ function temperature(){
               color = 'data4';
           }
           else {
-               color = 'rgba(0,100,0,0.8)';
+               color = 'defaultFill';
           }
           dataList[code] = {country: data[i].country, capital: data[i].capital ,
           tens: data[i].tens, zeros: data[i].zeros,
@@ -35,7 +40,7 @@ function temperature(){
           }
 
 // settings for the map
-var map = new Datamap({element: document.getElementById('map'),
+var map = new Datamap({element: document.getElementById('container'),
 setProjection: function(element) {
     var projection = d3.geo.equirectangular()
       .center([15, 10])
@@ -52,7 +57,7 @@ setProjection: function(element) {
         data2: '#fecc5c',
         data3: '#fd8d3c',
         data4: '#e31a1c',
-        defaultFill: 'rgba(0,100,0,0.4)'
+        defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,
     done: function(datamap) {
