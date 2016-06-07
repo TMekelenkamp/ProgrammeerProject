@@ -58,10 +58,10 @@ setProjection: function(element) {
     return {path: path, projection: projection};
   },
     fills: {
-        data1: '#ffffcc',
-        data2: '#c2e699',
-        data3: '#78c679',
-        data4: '#238443',
+        data1: '#ffe066',
+        data2: '#ffd633',
+        data3: '#ffcc00',
+        data4: '#cca300',
         defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,

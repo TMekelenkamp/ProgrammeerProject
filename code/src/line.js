@@ -5,11 +5,12 @@
   d3.json("test.json", function(error, data){
     if (error) console.log("help");
 
+  var country = "Bulgaria";
   // store de data in a var
   var data = data.json
   // console.log(data)
   // console.log(data[1].date[1])
-  // console.log(romania);
+  console.log(data[1].country);
   var date = [];
   var value = [];
   for (var i = 0; i < data[1].Bulgaria.length; i++)
