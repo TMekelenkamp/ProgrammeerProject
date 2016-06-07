@@ -19,3 +19,20 @@ d3.select('#update').on('click', function(e) {
         defaultData.RUS.color = 'blue';
         map.updateChoropleth(defaultData);
       });;
+
+--------------
+--------------
+scatter:
+Maakt een json met de data van emissie, temp en levensverwachting;
+- deze kan mogelijk nog gebruikt worden voor andere onderdelen (eerste 3 maps)
+- hiermee kan de scatter alle data makkeijker neerzetten wanneer er geswitched wordt
+van dataset(temp of levensverwachting).
+- json per land met de data van de verschillende onderdelen?
+  of json per onderdeel en dan het land er achter.
+
+  -----------------------
+  -----------------------
+  Line:
+  check line.js hoe de json format eruit ziet. Line wordt niet gemaakt en blijft op 0 punt
+  op de x-as. jsons maken voor verschillende data.
+  check format time voor de x-as data.

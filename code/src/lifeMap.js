@@ -11,7 +11,6 @@ function life(){
       div.selectAll('*').remove();
 
       var data = data.json
-      console.log(data[0].country)
 
       var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 

@@ -6,7 +6,6 @@ function emission(){
   if (error) {return console.warn(error)};
 
       var data = data.json
-      console.log(data[0].country)
 
       var div = d3.select('.map')
           .attr('id', 'container')

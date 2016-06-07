@@ -1,4 +1,4 @@
-# day 2
+# dag 2
 Ik heb mijn project definitie afgerond en ben mijn dataset aan het afronden.
 In de README.md staat beschreven welke visuele onderdelen er op mijn pagina komen.
 Vanmiddag maak ik een begin aan mijn DESIGN document. Daarvoor moet ik
@@ -8,7 +8,7 @@ Ik heb al een d3 map van Europa in mijn pagina gemaakt om mee te beginnen.
 Morgen ga ik de advanced sketches maken voor in het design document en de mark-up
 maken voor mijn scatterplot.
 
-# day 3
+# dag 3
 Vandaag heb ik mijn dataset voor de temperaturen afgemaakt en in de juiste format
 geplaatst. Ik liep tegen het probleem aan dat er geen data was over de gemiddelde
 temperaturen in Europa. Hierdoor had ik alles met de hand uit moeten uitzoeken
@@ -20,7 +20,7 @@ Ik heb ook de advanced sketches in mijn design document geplaatst en nog wat
 aangepast aan de libraries die ik zal gebruiken. Later deze week zal er nog
 een diagram bij komen waarin mijn datastructuren zullen staan.
 
-# day 4
+# dag 4
 Ik heb vandaag mijn volledige dataset af. Ik ben begonnen aan het maken van mijn
 kaar van Europa. Ik liep hier tegen wat problemen aan m.b.t het updaten van de
 gegevens. Na overleg met Sascha heb ik besloten om 3 aparte bestanden te maken
@@ -34,3 +34,39 @@ De kleuren zijn:
 emission: geel-groen tot aan donkerder groen voor de "greenhouse gasses".
 life: licht roze tot donker roze voor roze, "kleur van leven".
 Temperature: tinten van geel, oranje en rood zoals ook op weerkaarten gebruikt wordt.
+
+# dag 5
+Op de presentatie kreeg ik goede feedback op mijn kleurgebruik en op de manier waarop
+ik de kaart presenteer. Tevens was er ook wat discussie over de accuraatheid van
+mijn data aangezien deze alleen over de hoofdsteden gaat. En de temperatuur in
+Moskou is wel wat anders dan dat ik die van Siberië zou hebben. Daarom is het beter
+als ik ook nog een disclaimer op de pagina om duidelijk te maken dat deze data alleen
+de hoofdsteden representeerd als het gaat om temperatuur en niet het hele land.
+
+Verder heb ik vrijdag de kaart zo gemaakt dat deze veranderd wanneer er op de knop voor
+een andere dataset wordt gedrukt. In een verder statium zal ik nog wel de functie
+die daar achter zit moeten aanpaasen zodat ik geen dubbele stukken code nodig heb.
+Maar dat is iets voor als ik alle drie de onderdelen heb.
+
+# weekend 1
+kleine aanpassingen gedaan in de css en wat dingen uitgezocht voor de lijngrafiek en
+over de json die daar bij moet worden gemaakt.
+
+# dag 6
+Eerste stappen gezet om de lijngrafiek in beeld te krijgen. Wanneer er op de kaart een
+land wordt geselecteerd verschijnt er een lijngrafiek die de Co2 en de temperatuur/levensverwachting
+data laat zien van dat land. Dit is dan verdeeld over het tijdvak van 1980 tot 2010.
+
+Er is een lijngrafiek te zien, alleen wordt de lijn nog niet juist getekend. Ik heb
+een test json file staan met de data van slechts 2 landen er in om te testen of deze
+opbouw goed werkt voor wat ik wil bereiken.
+
+# dag 7
+De lijngrafiek doet het! Er wordth een grafiek getekend van de ingegeven data uit de
+test json. De json moet nu nog worden uitgebreid en van de grafiek moet ik een
+functie maken die variabel met de data uit de json kan werken. Daarna kan ik in de
+al gemaakt onlick funtie van de kaart de juiste info meegeven aan de functie van de grafiek.
+
+Ik heb ook een begin gemaakt met de comparison functie waar een gebruiker 2 landen
+invoert die hij met elkaar kan vergelijken. Ook heb ik een bootstrap thema toegevoegd.
+Hiermee is het navigeren op de pagina beter en overzichtelijker.
