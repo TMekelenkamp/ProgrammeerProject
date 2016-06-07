@@ -1,0 +1,303 @@
+{ "json" : [{
+ "Romania": {
+   "capital":"Bucharest",
+   "tens":"73.5",
+   "zeros":"71.2",
+   "nineties":"69.7",
+   "eighties":"69.1"
+ },
+ "Bulgaria": {
+   "capital":"Sofia",
+   "tens":"73.5",
+   "zeros":"71.7",
+   "nineties":"71.6",
+   "eighties":"71.2"
+ },
+ "Malta": {
+   "capital":"Valletta",
+   "tens":"81.4",
+   "zeros":"78.2",
+   "nineties":"75.2",
+   "eighties":"72.9"
+ },
+ "Slovakia": {
+   "capital":"Bratislava",
+   "tens":"75.1",
+   "zeros":"73.1",
+   "nineties":"70.9",
+   "eighties":"70.4"
+ },
+ "Hungary": {
+   "capital":"Budapest",
+   "tens":"74.2",
+   "zeros":"71.2",
+   "nineties":"69.3",
+   "eighties":"69.1"
+ },
+ "Poland": {
+   "capital":"Warsaw",
+   "tens":"76.2",
+   "zeros":"73.7",
+   "nineties":"70.9",
+   "eighties":"70.1"
+ },
+ "Latvia": {
+   "capital":"Riga",
+   "tens":"73.5",
+   "zeros":"70.3",
+   "nineties":"69.3",
+   "eighties":"68.8"
+ },
+ "Croatia": {
+   "capital":"Zagreb",
+   "tens":"76.5",
+   "zeros":"72.8",
+   "nineties":"72.2",
+   "eighties":"70.2"
+ },
+ "Luxembourg": {
+   "capital":"Luxembourg",
+   "tens":"80.6",
+   "zeros":"77.9",
+   "nineties":"75",
+   "eighties":"72.1"
+ },
+ "Netherlands": {
+   "capital":"Amsterdam",
+   "tens":"80.7",
+   "zeros":"78",
+   "nineties":"76.9",
+   "eighties":"75.7"
+ },
+ "United Kingdom": {
+   "capital":"London",
+   "tens":"80.4",
+   "zeros":"77.7",
+   "nineties":"75.9",
+   "eighties":"73.7"
+ },
+ "Greece": {
+   "capital":"Athens",
+   "tens":"80.4",
+   "zeros":"77.9",
+   "nineties":"76.9",
+   "eighties":"73.6"
+ },
+ "Lithuania": {
+   "capital":"Vilnius",
+   "tens":"73.3",
+   "zeros":"72",
+   "nineties":"71.2",
+   "eighties":"70.5"
+ },
+ "France": {
+   "capital":"Paris",
+   "tens":"81.7",
+   "zeros":"79.1",
+   "nineties":"76.6",
+   "eighties":"74.1"
+ },
+ "Belgium": {
+   "capital":"Brussels",
+   "tens":"80.2",
+   "zeros":"77.7",
+   "nineties":"76.1",
+   "eighties":"73.2"
+ },
+ "Denmark": {
+   "capital":"Copenhagen",
+   "tens":"79.1",
+   "zeros":"76.6",
+   "nineties":"74.8",
+   "eighties":"74.1"
+ },
+ "Ireland": {
+   "capital":"Dublin",
+   "tens":"80.7",
+   "zeros":"76.5",
+   "nineties":"74.7",
+   "eighties":"72.5"
+ },
+ "Germany": {
+   "capital":"Berlin",
+   "tens":"80",
+   "zeros":"77.9",
+   "nineties":"75.2",
+   "eighties":"72.7"
+ },
+ "Austria": {
+   "capital":"Vienna",
+   "tens":"80.6",
+   "zeros":"78.1",
+   "nineties":"75.6",
+   "eighties":"72.5"
+ },
+ "Italy": {
+   "capital":"Rome",
+   "tens":"82",
+   "zeros":"79.8",
+   "nineties":"77",
+   "eighties":"73.9"
+ },
+ "Portugal": {
+   "capital":"Lisbon",
+   "tens":"79",
+   "zeros":"76.3",
+   "nineties":"74",
+   "eighties":"71.2"
+ },
+ "Slovenia": {
+   "capital":"Ljubljana",
+   "tens":"79.4",
+   "zeros":"75.4",
+   "nineties":"73.2",
+   "eighties":"71.1"
+ },
+ "Spain": {
+   "capital":"Madrid",
+   "tens":"81.6",
+   "zeros":"79",
+   "nineties":"76.8",
+   "eighties":"75.3"
+ },
+ "Sweden": {
+   "capital":"Stockholm",
+   "tens":"81.5",
+   "zeros":"79.6",
+   "nineties":"77.5",
+   "eighties":"75.7"
+ },
+ "Czech Republic": {
+   "capital":"Prague",
+   "tens":"77.4",
+   "zeros":"75",
+   "nineties":"71.4",
+   "eighties":"70.3"
+ },
+ "Estonia": {
+   "capital":"Tallinn",
+   "tens":"75.4",
+   "zeros":"70.4",
+   "nineties":"69.5",
+   "eighties":"68.9"
+ },
+ "Finland": {
+   "capital":"Helsinki",
+   "tens":"79.9",
+   "zeros":"77.5",
+   "nineties":"74.8",
+   "eighties":"73.4"
+ },
+ "Cyprus": {
+   "capital":"Nicosia",
+   "tens":"79.4",
+   "zeros":"78",
+   "nineties":"76.5",
+   "eighties":"74.8"
+ },
+ "Kosovo ": {
+   "capital":"Pristina",
+   "tens":"69.9",
+   "zeros":"68",
+   "nineties":"67.7",
+   "eighties":"No data"
+ },
+ "Turkey": {
+   "capital":"Ankara",
+   "tens":"74.1",
+   "zeros":"70",
+   "nineties":"64.3",
+   "eighties":"58.7"
+ },
+ "Macedonia": {
+   "capital":"Skopje",
+   "tens":"74.7",
+   "zeros":"73.2",
+   "nineties":"71.1",
+   "eighties":"68.7"
+ },
+ "Albania": {
+   "capital":"Tirana",
+   "tens":"77",
+   "zeros":"74.3",
+   "nineties":"72",
+   "eighties":"70.2"
+ },
+ "Republic of Serbia": {
+   "capital":"Belgrade",
+   "tens":"74.3",
+   "zeros":"71.6",
+   "nineties":"No data",
+   "eighties":"No data"
+ },
+ "Liechtenstein": {
+   "capital":"Vaduz",
+   "tens":"81.8",
+   "zeros":"76.8",
+   "nineties":"No data",
+   "eighties":"No data"
+ },
+ "Bosnia and Herzegovina ": {
+   "capital":"Sarajevo",
+   "tens":"75.8",
+   "zeros":"74.3",
+   "nineties":"70.8",
+   "eighties":"70.2"
+ },
+ "Montenegro": {
+   "capital":"Podgorica",
+   "tens":"75",
+   "zeros":"73.2",
+   "nineties":"74.4",
+   "eighties":"72.9"
+ },
+ "Switzerland": {
+   "capital":"Bern",
+   "tens":"82.2",
+   "zeros":"79.7",
+   "nineties":"77.2",
+   "eighties":"75.5"
+ },
+ "Norway": {
+   "capital":"Oslo",
+   "tens":"81",
+   "zeros":"78.6",
+   "nineties":"76.5",
+   "eighties":"75.7"
+ },
+ "Iceland": {
+   "capital":"Reykjavik",
+   "tens":"81.9",
+   "zeros":"79.7",
+   "nineties":"78",
+   "eighties":"76.8"
+ },
+ "Russia": {
+   "capital":"Moscow",
+   "tens":"68.9",
+   "zeros":"65.3",
+   "nineties":"68.9",
+   "eighties":"67"
+ },
+ "Belarus": {
+   "capital":"Minsk",
+   "tens":"70.4",
+   "zeros":"68.9",
+   "nineties":"70.8",
+   "eighties":"69.8"
+ },
+ "Ukraine": {
+   "capital":"Kiev",
+   "tens":"70.3",
+   "zeros":"67.9",
+   "nineties":"70.1",
+   "eighties":"68.8"
+ },
+ "Moldova": {
+   "capital":"Chisinau",
+   "tens":"69.7",
+   "zeros":"66.9",
+   "nineties":"67.5",
+   "eighties":"64.8"
+ }
+}]}

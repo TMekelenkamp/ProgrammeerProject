@@ -2,7 +2,7 @@
 // 11167998
 // Universiteit van Amsterdam
 
-  d3.json("test.json", function(error, data){
+  d3.json("../dataset/test.json", function(error, data){
     if (error) console.log("help");
 
   var country = "Bulgaria";
