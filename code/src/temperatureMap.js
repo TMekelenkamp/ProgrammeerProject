@@ -1,3 +1,7 @@
+// Thom Mekelenkamp
+// 11167998
+// Universiteit van Amsterdam
+
 function temperature(){
 
   d3.json("../dataset/temperature.json", function(error, data){

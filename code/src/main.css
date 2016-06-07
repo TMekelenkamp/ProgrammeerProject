@@ -1,3 +1,18 @@
+/*Thom Mekelenkamp
+  11167998
+  Universiteit van Amsterdam*/
+
+
+
+.comparison {
+  width: 100%;
+  overflow: hidden;
+}
+
+#field1, #field2 {
+    align-self: center;
+}
+
 .container {
   width: 100%;
 }

@@ -1,5 +1,6 @@
 // Thom Mekelenkamp
-
+// 11167998
+// Universiteit van Amsterdam
 
   d3.json("test.json", function(error, data){
     if (error) console.log("help");
@@ -34,22 +35,13 @@
 
       var temps = [];
 
-      // temps += data.Romania.tens + "," + data.Romania.zeros + "," + data.Romania.nineties + "," + data.Romania.eighties;
-      // console.log(data.Romania.zeros) ;
-      // console.log(data.Romania.nineties) ;
-      // console.log(data.Romania.eighties);
-      //
-      // console.log(temps);
   // get the min and max temperatures
-  var min = 0//(data.Romania.tens / 1000)  //Math.min.apply(Math,temps),
-      max = 200000  //(data.Romania.eighties / 100)   //Math.max.apply(Math,temps);
-      // console.log(min);
-      // console.log(max);
-  // store the date in the correct date format
-  // var formatTime = d3.time.format("%Y/%m/%d"),
-  //     mindate = formatTime.parse("2015/5/1"),
-  //     maxdate = formatTime.parse("2016/5/1");
+  var min = 0  //Math.min.apply(Math,temps),
+      max = 200000 //Math.max.apply(Math,temps);
+
+  // parse function
   var parseDate = d3.time.format("%Y").parse;
+
   // define the scales on the x axis
   var xScale = d3.scale.linear()
     .domain([1980, 2010])
@@ -93,13 +85,11 @@
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis);
-        // .tickFormat(d3.time.format("%Y"));
 
   // append the y axis with the correct data
   chart.append("g")
       .attr("class", "yScale axis")
       .call(yAxis)
-
 
   // create anchor text for the y axis
   chart.append("text")

@@ -1,5 +1,8 @@
-function life(){
+// Thom Mekelenkamp
+// 11167998
+// Universiteit van Amsterdam
 
+function life(){
 
   d3.json("../dataset/life.json", function(error, data){
   if (error) {return console.warn(error)};

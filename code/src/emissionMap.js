@@ -1,3 +1,7 @@
+// Thom Mekelenkamp
+// 11167998
+// Universiteit van Amsterdam
+
 window.onload = emission();
 
 function emission(){
