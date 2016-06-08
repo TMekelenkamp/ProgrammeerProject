@@ -1,303 +1,303 @@
 { "json" : [{
  "Romania": {
    "capital":"Bucharest",
-   "eigthies":"79335.545",
-   "nineties":"89984.513",
-   "zeros":"158861.774",
-   "tens":"196617.206"
+   "tens":"79335.545",
+   "zeros":"89984.513",
+   "nineties":"158861.774",
+   "eighties":"196617.206"
  },
  "Bulgaria": {
    "capital":"Sofia",
-   "eigthies":"44128.678",
-   "nineties":"43530.957",
-   "zeros":"75763.887",
-   "tens":"77487.377"
+   "tens":"44128.678",
+   "zeros":"43530.957",
+   "nineties":"75763.887",
+   "eighties":"77487.377"
  },
  "Malta": {
    "capital":"Valletta",
-   "eigthies":"2618.238",
-   "nineties":"2064.521",
-   "zeros":"2178.198",
-   "tens":"1023.093"
+   "tens":"2618.238",
+   "zeros":"2064.521",
+   "nineties":"2178.198",
+   "eighties":"1023.093"
  },
  "Slovakia": {
    "capital":"Bratislava",
-   "eigthies":"15427.069",
-   "nineties":"14396.642",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"15427.069",
+   "zeros":"14396.642",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Hungary": {
    "capital":"Budapest",
-   "eigthies":"50747.613",
-   "nineties":"55811.74",
-   "zeros":"69614.328",
-   "tens":"86860.229"
+   "tens":"50747.613",
+   "zeros":"55811.74",
+   "nineties":"69614.328",
+   "eighties":"86860.229"
  },
  "Poland": {
    "capital":"Warsaw",
-   "eigthies":"317081.823",
-   "nineties":"299278.538",
-   "zeros":"368397.821",
-   "tens":"464575.897"
+   "tens":"317081.823",
+   "zeros":"299278.538",
+   "nineties":"368397.821",
+   "eighties":"464575.897"
  },
  "Latvia": {
    "capital":"Riga",
-   "eigthies":"8313.089",
-   "nineties":"6241.234",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"8313.089",
+   "zeros":"6241.234",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Croatia": {
    "capital":"Zagreb",
-   "eigthies":"20890.899",
-   "nineties":"19644.119",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"20890.899",
+   "zeros":"19644.119",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Luxembourg": {
    "capital":"Luxembourg",
-   "eigthies":"10967.997",
-   "nineties":"8239.749",
-   "zeros":"10003.576",
-   "tens":"11026.669"
+   "tens":"10967.997",
+   "zeros":"8239.749",
+   "nineties":"10003.576",
+   "eighties":"11026.669"
  },
  "Netherlands": {
    "capital":"Amsterdam",
-   "eigthies":"181927.204",
-   "nineties":"165356.031",
-   "zeros":"158403.399",
-   "tens":"177508.469"
+   "tens":"181927.204",
+   "zeros":"165356.031",
+   "nineties":"158403.399",
+   "eighties":"177508.469"
  },
  "United Kingdom": {
    "capital":"London",
-   "eigthies":"492192.074",
-   "nineties":"541799.25",
-   "zeros":"555902.532",
-   "tens":"579290.658"
+   "tens":"492192.074",
+   "zeros":"541799.25",
+   "nineties":"555902.532",
+   "eighties":"579290.658"
  },
  "Greece": {
    "capital":"Athens",
-   "eigthies":"86717.216",
-   "nineties":"91616.328",
-   "zeros":"74278.752",
-   "tens":"51429.675"
+   "tens":"86717.216",
+   "zeros":"91616.328",
+   "nineties":"74278.752",
+   "eighties":"51429.675"
  },
  "Lithuania": {
    "capital":"Vilnius",
-   "eigthies":"13377.216",
-   "nineties":"12200.109",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"13377.216",
+   "zeros":"12200.109",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "France": {
    "capital":"Paris",
-   "eigthies":"357437.158",
-   "nineties":"364063.427",
-   "zeros":"375632.812",
-   "tens":"505363.938"
+   "tens":"357437.158",
+   "zeros":"364063.427",
+   "nineties":"375632.812",
+   "eighties":"505363.938"
  },
  "Belgium": {
    "capital":"Brussels",
-   "eigthies":"109093.25",
-   "nineties":"114894.444",
-   "zeros":"106049.64",
-   "tens":"135301.299"
+   "tens":"109093.25",
+   "zeros":"114894.444",
+   "nineties":"106049.64",
+   "eighties":"135301.299"
  },
  "Denmark": {
    "capital":"Copenhagen",
-   "eigthies":"46570.9",
-   "nineties":"51330.666",
-   "zeros":"50230.566",
-   "tens":"60369.821"
+   "tens":"46570.9",
+   "zeros":"51330.666",
+   "nineties":"50230.566",
+   "eighties":"60369.821"
  },
  "Ireland": {
    "capital":"Dublin",
-   "eigthies":"40175.652",
-   "nineties":"41235.415",
-   "zeros":"31242.84",
-   "tens":"26255.72"
+   "tens":"40175.652",
+   "zeros":"41235.415",
+   "nineties":"31242.84",
+   "eighties":"26255.72"
  },
  "Germany": {
    "capital":"Berlin",
-   "eigthies":"750697.239",
-   "nineties":"829977.779",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"750697.239",
+   "zeros":"829977.779",
+   "nineties":"",
+   "eighties":""
  },
  "Austria": {
    "capital":"Vienna",
-   "eigthies":"67975.179",
-   "nineties":"62188.653",
-   "zeros":"57722.247",
-   "tens":"52306.088"
+   "tens":"67975.179",
+   "zeros":"62188.653",
+   "nineties":"57722.247",
+   "eighties":"52306.088"
  },
  "Italy": {
    "capital":"Rome",
-   "eigthies":"405361.181",
-   "nineties":"450564.29",
-   "zeros":"417550.289",
-   "tens":"388969.691"
+   "tens":"405361.181",
+   "zeros":"450564.29",
+   "nineties":"417550.289",
+   "eighties":"388969.691"
  },
  "Portugal": {
    "capital":"Lisbon",
-   "eigthies":"49588.841",
-   "nineties":"62966.057",
-   "zeros":"42196.169",
-   "tens":"26985.453"
+   "tens":"49588.841",
+   "zeros":"62966.057",
+   "nineties":"42196.169",
+   "eighties":"26985.453"
  },
  "Slovenia": {
    "capital":"Ljubljana",
-   "eigthies":"15427.069",
-   "nineties":"14396.642",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"15427.069",
+   "zeros":"14396.642",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Spain": {
    "capital":"Madrid",
-   "eigthies":"270881.29",
-   "nineties":"294434.431",
-   "zeros":"218597.204",
-   "tens":"215003.544"
+   "tens":"270881.29",
+   "zeros":"294434.431",
+   "nineties":"218597.204",
+   "eighties":"215003.544"
  },
  "Sweden": {
    "capital":"Stockholm",
-   "eigthies":"52573.779",
-   "nineties":"49350.486",
-   "zeros":"51946.722",
-   "tens":"71759.523"
+   "tens":"52573.779",
+   "zeros":"49350.486",
+   "nineties":"51946.722",
+   "eighties":"71759.523"
  },
  "Czech Republic": {
    "capital":"Prague",
-   "eigthies":"111168.772",
-   "nineties":"123684.243",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"111168.772",
+   "zeros":"123684.243",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Estonia": {
    "capital":"Tallinn",
-   "eigthies":"18338.667",
-   "nineties":"15181.38",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"18338.667",
+   "zeros":"15181.38",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Finland": {
    "capital":"Helsinki",
-   "eigthies":"61843.955",
-   "nineties":"52427.099",
-   "zeros":"51745.037",
-   "tens":"58246.628"
+   "tens":"61843.955",
+   "zeros":"52427.099",
+   "nineties":"51745.037",
+   "eighties":"58246.628"
  },
  "Cyprus": {
    "capital":"Nicosia",
-   "eigthies":"7708.034",
-   "nineties":"6849.956",
-   "zeros":"4653.423",
-   "tens":"3208.625"
+   "tens":"7708.034",
+   "zeros":"6849.956",
+   "nineties":"4653.423",
+   "eighties":"3208.625"
  },
  "Kosovo ": {
    "capital":"Pristina",
-   "eigthies":"No data",
-   "nineties":"No data",
+   "tens":"No data",
    "zeros":"No data",
-   "tens":"No data"
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Turkey": {
    "capital":"Ankara",
-   "eigthies":"298002.422",
-   "nineties":"216151.315",
-   "zeros":"145858.592",
-   "tens":"75763.887"
+   "tens":"298002.422",
+   "zeros":"216151.315",
+   "nineties":"145858.592",
+   "eighties":"75763.887"
  },
  "Macedonia": {
    "capital":"Skopje",
-   "eigthies":"8602.782",
-   "nineties":"12064.43",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"8602.782",
+   "zeros":"12064.43",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Albania": {
    "capital":"Tirana",
-   "eigthies":"4415.068",
-   "nineties":"3021.608",
-   "zeros":"7488.014",
-   "tens":"5170.47"
+   "tens":"4415.068",
+   "zeros":"3021.608",
+   "nineties":"7488.014",
+   "eighties":"5170.47"
  },
  "Republic of Serbia": {
    "capital":"Belgrade",
-   "eigthies":"45877.837",
-   "nineties":"No data",
+   "tens":"45877.837",
    "zeros":"No data",
-   "tens":"No data"
+   "nineties":"No data",
+   "eighties":"No data"
  },
- "Liechtenstein": {
+ "Liecheightiestein": {
    "capital":"Vaduz",
-   "eigthies":"58.672",
-   "nineties":"No data",
+   "tens":"58.672",
    "zeros":"No data",
-   "tens":"No data"
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Bosnia and Herzegovina ": {
    "capital":"Sarajevo",
-   "eigthies":"21147.589",
-   "nineties":"13787.92",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"21147.589",
+   "zeros":"13787.92",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Montenegro": {
    "capital":"Podgorica",
-   "eigthies":"2581.568",
-   "nineties":"No data",
+   "tens":"2581.568",
    "zeros":"No data",
-   "tens":"No data"
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Switzerland": {
    "capital":"Bern",
-   "eigthies":"38752.856",
-   "nineties":"39049.883",
-   "zeros":"42610.54",
-   "tens":"40538.685"
+   "tens":"38752.856",
+   "zeros":"39049.883",
+   "nineties":"42610.54",
+   "eighties":"40538.685"
  },
  "Norway": {
    "capital":"Oslo",
-   "eigthies":"56794.496",
-   "nineties":"38730.854",
-   "zeros":"31385.853",
-   "tens":"36592.993"
+   "tens":"56794.496",
+   "zeros":"38730.854",
+   "nineties":"31385.853",
+   "eighties":"36592.993"
  },
  "Iceland": {
    "capital":"Reykjavik",
-   "eigthies":"1961.845",
-   "nineties":"2163.53",
-   "zeros":"1998.515",
-   "tens":"1866.503"
+   "tens":"1961.845",
+   "zeros":"2163.53",
+   "nineties":"1998.515",
+   "eighties":"1866.503"
  },
  "Russia": {
    "capital":"Moscow",
-   "eigthies":"1742540.065",
-   "nineties":"1558111.967",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"1742540.065",
+   "zeros":"1558111.967",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Belarus": {
    "capital":"Minsk",
-   "eigthies":"62221.656",
-   "nineties":"53468.527",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"62221.656",
+   "zeros":"53468.527",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Ukraine": {
    "capital":"Kiev",
-   "eigthies":"304496.679",
-   "nineties":"320774.492",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"304496.679",
+   "zeros":"320774.492",
+   "nineties":"No data",
+   "eighties":"No data"
  },
  "Moldova": {
    "capital":"Chisinau",
-   "eigthies":"4935.782",
-   "nineties":"3512.986",
-   "zeros":"No data",
-   "tens":"No data"
+   "tens":"4935.782",
+   "zeros":"3512.986",
+   "nineties":"No data",
+   "eighties":"No data"
  }
 }]}

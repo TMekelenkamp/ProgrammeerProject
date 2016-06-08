@@ -71,14 +71,16 @@ setProjection: function(element) {
     },
     geographyConfig:{
       popupTemplate: function(geography, dataList) {
-          // if (!dataList) { return ; }
+          if (!dataList) { return ; }
           return['<div class="hoverinfo"><strong>' + geography.properties.name + '</strong>' +
           ' <br>2010: ' + dataList.tens +
           ' <br>2000: ' + dataList.zeros +
           ' <br>1990: ' + dataList.nineties +
           ' <br>1980: ' + dataList.eighties +
           ' </div>'].join('');
-      }
+      },
+      highlightOnHover: true,
+      highlightFillColor: '#d6d6c2'
     }
   });
 

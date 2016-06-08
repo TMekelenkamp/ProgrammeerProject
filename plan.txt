@@ -36,3 +36,5 @@ van dataset(temp of levensverwachting).
   check line.js hoe de json format eruit ziet. Line wordt niet gemaakt en blijft op 0 punt
   op de x-as. jsons maken voor verschillende data.
   check format time voor de x-as data.
+
+  zoeken op key van de json, indien gevonden object in een var stoppen en dan deze var.data & var.value

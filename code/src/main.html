@@ -15,6 +15,7 @@ Universiteit van Amsterdam -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
   <!-- loaded libraries -->
+  <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
   <script src="../sources/datamaps.world.min.js"></script>
@@ -27,6 +28,10 @@ Universiteit van Amsterdam -->
   <script src="lifeMap.js"></script>
   <script src="line.js"></script>
   <script src="compare.js"></script>
+  <script src="barchart.js"></script>
+  <!-- <script src="scatter.js"></script> -->
+
+
 </head>
 
 <body>
@@ -46,6 +51,8 @@ Universiteit van Amsterdam -->
 
       <!-- classes for the index -->
       <div id="indexTab" class="tab-pane fade in active">
+        <svg class="chart"></svg>
+
       </div>
 
       <!-- classes for the map and buttons with graph -->
@@ -58,9 +65,10 @@ Universiteit van Amsterdam -->
               <br><input id="button3" type="submit" name="button3" value="Life expectancy" onclick="life();" /></br>
             </div>
         </div>
-        <div id="chart">
-          <svg class="chart"></svg>
+        <div id="graph">
+          <svg class="graph"></svg>
         </div>
+
       </div>
 
       <!-- classes for the comparison with barcharts -->

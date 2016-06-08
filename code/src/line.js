@@ -2,43 +2,59 @@
 // 11167998
 // Universiteit van Amsterdam
 
-  d3.json("../dataset/test.json", function(error, data){
+
+drawGraph("Germany")
+
+// draws a line graph of the co2 data and another variable data
+function drawGraph(country){
+
+  // load the json file with the data
+  d3.json("../dataset/changedJson/emission.json", function(error, data){
     if (error) console.log("help");
 
-  var country = "Bulgaria";
-  // store de data in a var
+  // store the data from the json in a variable
   var data = data.json
-  // console.log(data)
-  // console.log(data[1].date[1])
-  console.log(data[1].country);
-  var date = [];
-  var value = [];
-  for (var i = 0; i < data[1].Bulgaria.length; i++)
-  {
-    date.push(data[1].Bulgaria[i].date);
-    value.push(data[1].Bulgaria[i].value);
 
+  // function that gets the county data that fits the country from the map
+  function findCountry(country, data){
+    var key = country;
+    var object = data[0][key];
+    return object;
   }
-  console.log(date);
-  console.log(value);
+  // store the country data in a variable
+  var dataset = findCountry(country, data);
+
+  console.log(dataset.tens);
+  console.log(dataset.zeros);
+  console.log(dataset.nineties);
+  console.log(dataset.eighties);
+  console.log(dataset.length);
+
+  // create 2 lists for the data to use in the graph
+  var date = ['2010', '2000', '1990', '1980'];
+  var value = [];
+
+  date = ['2010', '2000', '1990', '1980'];
+  value.push(dataset.tens);
+  value.push(dataset.zeros);
+  value.push(dataset.nineties);
+  value.push(dataset.eighties);
 
   var dataList = []
-  for (var i = 0; i < data[1].Bulgaria.length; i++)
+  for (var i = 0; i < 4; i++)
   {
     dataList[i] = {date: date[i], value: value[i]};
 }
-  console.log(dataList);
+
   // setting the margins and sizes of the graph
   var margin = {top: 50, right: 100, bottom: 100, left: 100};
   var width = 1100,
       height = 500,
       padding = 0;
 
-      var temps = [];
-
   // get the min and max temperatures
-  var min = 0  //Math.min.apply(Math,temps),
-      max = 200000 //Math.max.apply(Math,temps);
+  var min = Math.min.apply(Math,value),
+      max = Math.max.apply(Math,value);
 
   // parse function
   var parseDate = d3.time.format("%Y").parse;
@@ -69,7 +85,7 @@
       .y(function(dataList) {console.log(dataList.value); return yScale(dataList.value); });
 
   // creat the var for the chart
-  var chart = d3.select(".chart")
+  var chart = d3.select(".graph")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -155,3 +171,4 @@
 
 
 });
+}

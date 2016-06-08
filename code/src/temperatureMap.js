@@ -56,10 +56,10 @@ setProjection: function(element) {
     return {path: path, projection: projection};
   },
     fills: {
-        data1: '#ffffb2',
-        data2: '#fecc5c',
-        data3: '#fd8d3c',
-        data4: '#e31a1c',
+        data1: '#ffa366',
+        data2: '#ff8533',
+        data3: '#ff6600',
+        data4: '#cc5200',
         defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,
@@ -76,7 +76,9 @@ setProjection: function(element) {
           ' <br>1990: ' + dataList.nineties +
           ' <br>1980: ' + dataList.eighties +
           ' </div>'].join('');
-      }
+      },
+      highlightOnHover: true,
+      highlightFillColor: '#d6d6c2'
     }
   });
 

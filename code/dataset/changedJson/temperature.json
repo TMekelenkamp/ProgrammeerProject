@@ -1,15 +1,15 @@
-{ "json" :[{
+{ "json" :{
  "Romania": {
    "capital":"Bucharest",
    "tens":"36",
-   "nineties":"41",
+   "zeros":"41",
    "nineties":"35",
    "eigthies":"36"
  },
  "Bulgaria": {
    "capital":"Sofia",
    "tens":"36",
-   "nineties":"41",
+   "zeros":"41",
    "nineties":"33",
    "eigthies":"35"
  },
@@ -300,4 +300,4 @@
    "FIELD5":"37",
    "eigthies":"No data"
  }
-}]}
+}}

@@ -6,7 +6,7 @@
 
 .comparison {
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #field1, #field2 {
@@ -55,11 +55,11 @@
 }
 
 #button2 {
-    background-color: #e31a1c;
+    background-color: #cc5200;
 }
 
 #button3 {
-    background-color: #ce1256;
+    background-color: #cc0052;
 }
 
 .map {
@@ -87,4 +87,14 @@ text {
 
 g {
     pointer-events: all;
+}
+
+rect:hover{
+  fill: lightsteelblue;
+}
+.bar {
+  fill: steelblue;
+}
+
+
 }
