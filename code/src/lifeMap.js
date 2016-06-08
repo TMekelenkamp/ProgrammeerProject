@@ -9,9 +9,9 @@ function life(){
 
 
       var div = d3.select('.map')
-          .attr('id', 'container')
+          .attr('id', 'mapContainer')
 
-      div.selectAll('*').remove();
+      div.selectAll('*').remove('mapContainer');
 
       var data = data.json
 
@@ -44,7 +44,7 @@ function life(){
           }
 
 // settings for the map
-var map = new Datamap({element: document.getElementById('container'),
+var map = new Datamap({element: document.getElementById('mapContainer'),
 setProjection: function(element) {
     var projection = d3.geo.equirectangular()
       .center([15, 10])
