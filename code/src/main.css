@@ -1,7 +1,11 @@
 /*Thom Mekelenkamp
   11167998
   Universiteit van Amsterdam*/
-
+#barContainer, .chart {
+  padding-left: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
 
 
 .comparison {

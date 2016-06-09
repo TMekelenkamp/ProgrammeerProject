@@ -70,3 +70,14 @@ al gemaakt onlick funtie van de kaart de juiste info meegeven aan de functie van
 Ik heb ook een begin gemaakt met de comparison functie waar een gebruiker 2 landen
 invoert die hij met elkaar kan vergelijken. Ook heb ik een bootstrap thema toegevoegd.
 Hiermee is het navigeren op de pagina beter en overzichtelijker.
+
+#day 8
+Veel problemen gehad met het maken van de compare functie. Jsons moeten veranderen
+zodat de data voor verschillende grafieken kon worden geladen. Om de een of andere
+reden kwamen mn barcharts nog steeds niet in beeld. Wel heb ik vast de kaarten aangepast
+in andere kleuren adhv de feedback die ik kreeg bij de vorige presentatie.
+
+# day 9
+Vandaag eindelijk de compare functie werkend gekregen. De landen kunnen in upper
+en lowercase worden ingegeven. Daarna wordt er met die 2 landen een barchart gemaakt.
+Deze wordt ook aangepast als de landen worden gewisseld.

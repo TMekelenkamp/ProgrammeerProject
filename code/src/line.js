@@ -24,11 +24,11 @@ function drawGraph(country){
   // store the country data in a variable
   var dataset = findCountry(country, data);
 
-  console.log(dataset.tens);
-  console.log(dataset.zeros);
-  console.log(dataset.nineties);
-  console.log(dataset.eighties);
-  console.log(dataset.length);
+  // console.log(dataset.tens);
+  // console.log(dataset.zeros);
+  // console.log(dataset.nineties);
+  // console.log(dataset.eighties);
+  // console.log(dataset.length);
 
   // create 2 lists for the data to use in the graph
   var date = ['2010', '2000', '1990', '1980'];
@@ -81,8 +81,8 @@ function drawGraph(country){
 
   // give the data for the average temperature
   var line = d3.svg.line()
-      .x(function(dataList) {console.log(dataList.date); return xScale(dataList.date); })
-      .y(function(dataList) {console.log(dataList.value); return yScale(dataList.value); });
+      .x(function(dataList) {return xScale(dataList.date); })
+      .y(function(dataList) {return yScale(dataList.value); });
 
   // creat the var for the chart
   var chart = d3.select(".graph")
