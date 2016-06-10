@@ -4,10 +4,35 @@
 
 function drawBar(data, max){
 
-var div = d3.select('.chart')
-    .attr('id', 'barContainer')
+console.log(max);
 
-div.selectAll('*').remove('barContainer');
+var id;
+if (max == 1800000){
+  id = 'barContainer1';
+  var div = d3.select('.chart')
+      .attr('id', id)
+
+  // div.selectAll('*').remove('barContainer1');
+}
+if (max == 45){
+  id = 'barContainer2';
+  var div = d3.select('.chart')
+      .attr('id', id)
+
+  // div.selectAll('*').remove('barContainer2');
+}
+if (max == 90){
+  id = 'barContainer3';
+  var div = d3.select('.chart')
+      .attr('id', id)
+
+  // div.selectAll('*').remove('barContainer3');
+}
+
+// div.selectAll('*').remove('mapContainer1');
+// div.selectAll('*').remove('mapContainer2');
+// div.selectAll('*').remove('mapContainer3');
+
 
 var data = data;
 
@@ -29,7 +54,7 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var svg = d3.select("#barContainer").append("svg")
+var svg = d3.select('#' + id).append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
@@ -54,7 +79,7 @@ var svg = d3.select("#barContainer").append("svg")
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Co2 emission in kilotons");
+      .text("");
 
   svg.selectAll(".bar")
       .data(data)

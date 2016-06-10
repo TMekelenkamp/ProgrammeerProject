@@ -4,30 +4,48 @@
 
 // function that compares two countries on temp, life, and co2
 function compare() {
+  // var div = d3.select('.chart')
+  //     .attr('id', 'barContainer')
+
+  // div.selectAll('*').remove('barContainer');
 
   // get the input from the user forms
   var country1 = document.getElementById('field1').value;
   var country2 = document.getElementById('field2').value;
 
+  var max;
+  var file;
+  for (var i = 0; i < 3; i++){
+    if (i == 0){
+      max = 1800000;
+      file = "../dataset/changedJson/emission.json";
+    }
+    else if(i == 1){
+      max = 45;
+      file = "../dataset/changedJson/temp.json";
+    }
+    else if(i == 2){
+      max = 90;
+      file = "../dataset/changedJson/life.json";
+    }
+    getData(country1, country2, file, max);
+  }
   // call the getData function to get the data for the 2 countries
-  getData(country1, country2);
+  // getData(country1, country2, file, max);
 }
 
 // draws a line graph of the co2 data and another variable data
-function getData(country1, country2){
+function getData(country1, country2, file, max){
 
   // load the json file with the data
-  d3.json("../dataset/changedJson/temperature.json", function(error, data){
+  d3.json(file, function(error, data){
     if (error) alert ("Error loading country data");
-
   // store the data from the json in a variable
   var data = data.json
   // console.log(data);
   // function that gets the county data that fits the country from the map
   function findCountry(country, data){
     var key = country;
-    console.log(key);
-    console.log(data);
     var object = data[0][key];
     return object;
   }
@@ -56,17 +74,17 @@ function getData(country1, country2){
     return 0
   }
 
-  var max = "temperature";
+  // var max = "temperature";
   // make the max variable for the y-axis on the barchart
-  if (max == "emission"){
-    max = 1800000;
-  }
-  else if (max == "life"){
-    max = 90;
-  }
-  else if (max = "temperature") {
-    max = 45;
-  }
+  // if (max == "emission"){
+  //   max = 1800000;
+  // }
+  // else if (max == "life"){
+  //   max = 90;
+  // }
+  // else if (max = "temperature") {
+  //   max = 45;
+  // }
 
   // store the country data in a variable
   var dataset1 = findCountry(country1, data);
@@ -85,6 +103,7 @@ function getData(country1, country2){
   var dataList = [];
   dataList[0]= {value: value[0], country: country1};
   dataList[1]= {value: value[1], country: country2};
+
 
   // call the drawBar function with the dataList
   drawBar(dataList, max);
