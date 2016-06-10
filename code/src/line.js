@@ -3,7 +3,7 @@
 // Universiteit van Amsterdam
 
 
-drawGraph("Germany")
+drawGraph("Netherlands")
 
 // draws a line graph of the co2 data and another variable data
 function drawGraph(country){
