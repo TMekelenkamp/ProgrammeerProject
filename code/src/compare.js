@@ -4,11 +4,6 @@
 
 // function that compares two countries on temp, life, and co2
 function compare() {
-  // var div = d3.select('.chart')
-  //     .attr('id', 'barContainer')
-
-  // div.selectAll('*').remove('barContainer');
-
   // get the input from the user forms
   var country1 = document.getElementById('field1').value;
   var country2 = document.getElementById('field2').value;
@@ -28,6 +23,8 @@ function compare() {
       max = 90;
       file = "../dataset/changedJson/life.json";
     }
+
+    console.log(i);
     getData(country1, country2, file, max);
   }
   // call the getData function to get the data for the 2 countries

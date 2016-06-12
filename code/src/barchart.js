@@ -5,31 +5,35 @@
 function drawBar(data, max){
 
 console.log(max);
+id = 'barContainer';
+var div = d3.select('.chart')
+    .attr('id', id)
 
-var id;
-if (max == 1800000){
-  id = 'barContainer1';
-  var div = d3.select('.chart')
-      .attr('id', id)
+// div.selectAll('*').remove('barContainer');
 
-  // div.selectAll('*').remove('barContainer1');
-}
-if (max == 45){
-  id = 'barContainer2';
-  var div = d3.select('.chart')
-      .attr('id', id)
+
+
+// var id;
+// if (max == 1800000){
+
+
+// div.selectAll('*').remove('barContainer1');
+// }
+// if (max == 45){
+  // id = 'barContainer2';
+  // var div = d3.select('.chart')
+  //     .attr('id', id)
 
   // div.selectAll('*').remove('barContainer2');
-}
-if (max == 90){
-  id = 'barContainer3';
-  var div = d3.select('.chart')
-      .attr('id', id)
+// }
+// if (max == 90){
+  // id = 'barContainer3';
+  // var div = d3.select('.chart')
+  //     .attr('id', id)
 
   // div.selectAll('*').remove('barContainer3');
-}
+// }
 
-// div.selectAll('*').remove('mapContainer1');
 // div.selectAll('*').remove('mapContainer2');
 // div.selectAll('*').remove('mapContainer3');
 
