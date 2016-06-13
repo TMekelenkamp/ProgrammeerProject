@@ -81,3 +81,15 @@ in andere kleuren adhv de feedback die ik kreeg bij de vorige presentatie.
 Vandaag eindelijk de compare functie werkend gekregen. De landen kunnen in upper
 en lowercase worden ingegeven. Daarna wordt er met die 2 landen een barchart gemaakt.
 Deze wordt ook aangepast als de landen worden gewisseld.
+
+# day 10
+In de compare functie moet nog worden aangepast hoe de barcharts worden geupdate.
+Momenteel wordt of alles verwijderd of geen van allen. Bij de presentatie kreeg ik
+goede feedback op mn visualisatie. Voor de invoervelden ga ik dropdowns maken met een
+zoekbalk er in zodat de user niet constant de volledige landnaam moet zoeken.
+
+#weekend 2
+Kleine aanpassingen gemaakt aan de update functie en de css.
+
+# day 11
+Implementeren van de scatterplot en het maken van de labels aan en titels aan de barcharts.

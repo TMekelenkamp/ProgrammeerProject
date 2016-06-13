@@ -30,14 +30,14 @@
 {"nineties": "64.3", "country": "Turkey", "zeros": "70", "capital": "Ankara", "tens": "74.1", "eighties": "58.7"},
 {"nineties": "71.1", "country": "Macedonia", "zeros": "73.2", "capital": "Skopje", "tens": "74.7", "eighties": "68.7"},
 {"nineties": "72", "country": "Albania", "zeros": "74.3", "capital": "Tirana", "tens": "77", "eighties": "70.2"},
-{"nineties": "No data", "country": "Republic of Serbia", "zeros": "71.6", "capital": "Belgrade", "tens": "74.3", "eighties": "No data"},
+{"nineties": "No data", "country": "Serbia", "zeros": "71.6", "capital": "Belgrade", "tens": "74.3", "eighties": "No data"},
 {"nineties": "No data", "country": "Liechtenstein", "zeros": "76.8", "capital": "Vaduz", "tens": "81.8", "eighties": "No data"},
-{"nineties": "70.8", "country": "Bosnia and Herzegovina ", "zeros": "74.3", "capital": "Sarajevo", "tens": "75.8", "eighties": "70.2"},
+{"nineties": "70.8", "country": "Bosnia and Herzegovina", "zeros": "74.3", "capital": "Sarajevo", "tens": "75.8", "eighties": "70.2"},
 {"nineties": "74.4", "country": "Montenegro", "zeros": "73.2", "capital": "Podgorica", "tens": "75", "eighties": "72.9"},
 {"nineties": "77.2", "country": "Switzerland", "zeros": "79.7", "capital": "Bern", "tens": "82.2", "eighties": "75.5"},
 {"nineties": "76.5", "country": "Norway", "zeros": "78.6", "capital": "Oslo", "tens": "81", "eighties": "75.7"},
 {"nineties": "78", "country": "Iceland", "zeros": "79.7", "capital": "Reykjavik", "tens": "81.9", "eighties": "76.8"},
-{"nineties": "68.9", "country": "Russia", "zeros": "65.3", "capital": "Moscow", "tens": "68.9", "eighties": "67"},
+{"nineties": "68.9", "country": "Russian Federation", "zeros": "65.3", "capital": "Moscow", "tens": "68.9", "eighties": "67"},
 {"nineties": "70.8", "country": "Belarus", "zeros": "68.9", "capital": "Minsk", "tens": "70.4", "eighties": "69.8"},
 {"nineties": "70.1", "country": "Ukraine", "zeros": "67.9", "capital": "Kiev", "tens": "70.3", "eighties": "68.8"},
-{"nineties": "67.5", "country": "Moldova", "zeros": "66.9", "capital": "Chisinau", "tens": "69.7", "eighties": "64.8"}]}
+{"nineties": "67.5", "country": "Moldova, Republic of", "zeros": "66.9", "capital": "Chisinau", "tens": "69.7", "eighties": "64.8"}]}

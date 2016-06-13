@@ -18,18 +18,19 @@ Universiteit van Amsterdam -->
   <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-  <script src="../sources/datamaps.world.min.js"></script>
+  <script src="../sources/datamaps.world.hires.min.js"></script>
 
   <!-- loaded scripts and stylesheets -->
   <link rel="stylesheet" type="text/css" href="main.css"/>
-  <script src="main.js"></script>
   <script src="emissionMap.js"></script>
+  <script src="main.js"></script>
   <script src="temperatureMap.js"></script>
   <script src="lifeMap.js"></script>
-  <script src="line.js"></script>
+  <!-- <script src="line.js"></script> -->
+    <script src="scatter.js"></script>
   <script src="barchart.js"></script>
   <script src="compare.js"></script>
-  <script src="scatter.js"></script>
+
 
 
 </head>
@@ -62,11 +63,9 @@ Universiteit van Amsterdam -->
               <br><input id="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" /></br>
               <br><input id="button3" type="submit" name="button3" value="Life expectancy" onclick="life();" /></br>
             </div>
-        </div>
-        <div id="graph">
-          <svg class="graph"></svg>
-        </div>
-
+            </div>
+              <div class="scatter" style=" width: 960; height: 500px;">
+              </div>
       </div>
 
       <!-- classes for the comparison with barcharts -->

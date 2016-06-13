@@ -30,14 +30,14 @@
 {"nineties": "33", "country": "Turkey", "zeros": "41", "capital": "Ankara", "tens": "38", "eighties": "39"},
 {"nineties": "37", "country": "Macedonia", "zeros": "41", "capital": "Skopje", "tens": "38", "eighties": "38"},
 {"nineties": "36", "country": "Albania", "zeros": "40", "capital": "Tirana", "tens": "37", "eighties": "36"},
-{"nineties": "35", "country": "Republic of Serbia", "zeros": "41", "capital": "Belgrade", "tens": "37", "eighties": "33"},
+{"nineties": "35", "country": "Serbia", "zeros": "41", "capital": "Belgrade", "tens": "37", "eighties": "33"},
 {"nineties": "No data", "country": "Liechtenstein", "zeros": "29", "capital": "Vaduz", "tens": "33", "eighties": "No data"},
-{"nineties": "32", "country": "Bosnia and Herzegovina ", "zeros": "39", "capital": "Sarajevo", "tens": "36", "eighties": "34"},
+{"nineties": "32", "country": "Bosnia and Herzegovina", "zeros": "39", "capital": "Sarajevo", "tens": "36", "eighties": "34"},
 {"nineties": "38", "country": "Montenegro", "zeros": "40", "capital": "Podgorica", "tens": "38", "eighties": "No data"},
 {"nineties": "32", "country": "Switzerland", "zeros": "30", "capital": "Bern", "tens": "34", "eighties": "No data"},
 {"nineties": "26", "country": "Norway", "zeros": "25", "capital": "Oslo", "tens": "24", "eighties": "28"},
 {"nineties": "20", "country": "Iceland", "zeros": "19", "capital": "Reykjavik", "tens": "20", "eighties": "23"},
-{"nineties": "29", "country": "Russia", "zeros": "29", "capital": "Moscow", "tens": "38", "eighties": "30"},
+{"nineties": "29", "country": "Russian Federation", "zeros": "29", "capital": "Moscow", "tens": "38", "eighties": "30"},
 {"nineties": "No data", "country": "Belarus", "zeros": "32", "capital": "Minsk", "tens": "35", "eighties": "No data"},
 {"nineties": "29", "country": "Ukraine", "zeros": "36", "capital": "Kiev", "tens": "38", "eighties": "30"},
-{"nineties": "37", "country": "Moldova", "zeros": "38", "capital": "Chisinau", "tens": "37", "eighties": "No data"}]}
+{"nineties": "37", "country": "Moldova, Republic of", "zeros": "38", "capital": "Chisinau", "tens": "37", "eighties": "No data"}]}

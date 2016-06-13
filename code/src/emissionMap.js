@@ -1,8 +1,9 @@
 // Thom Mekelenkamp
 // 11167998
 // Universiteit van Amsterdam
+//
+// window.onload = emission();
 
-window.onload = emission();
 
 function emission(){
 
@@ -67,6 +68,8 @@ setProjection: function(element) {
     data: dataList,
     done: function(datamap) {
         datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+          console.log((findCountry(countries, geography.properties.name)));
+          console.log(geography.properties.name);
         });
     },
     geographyConfig:{

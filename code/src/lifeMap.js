@@ -4,7 +4,7 @@
 
 function life(){
 
-  d3.json("../dataset/life.json", function(error, data){
+  d3.json("../dataset/lifes.json", function(error, data){
   if (error) {return console.warn(error)};
 
 
@@ -66,6 +66,8 @@ setProjection: function(element) {
     data: dataList,
     done: function(datamap) {
         datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+          console.log((findCountry(countries, geography.properties.name)));
+          console.log(geography.properties.name);
         });
     },
     geographyConfig:{

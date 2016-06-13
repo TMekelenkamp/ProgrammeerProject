@@ -4,7 +4,7 @@
 
 function temperature(){
 
-  d3.json("../dataset/temperature.json", function(error, data){
+  d3.json("../dataset/temperatures.json", function(error, data){
   if (error) {return console.warn(error)};
 
       var data = data.json
