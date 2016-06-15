@@ -22,7 +22,7 @@
 }
 
 .mapButtons {
-    width: 1000px;
+    width: 1400px;
     overflow: hidden;
 }
 
@@ -100,5 +100,19 @@ rect:hover{
   fill: steelblue;
 }
 
+/*.axis path,*/
+.y-axis, .x-axis {
+  /*fill: none;*/
+  /*stroke: #000;*/
+  shape-rendering: crispEdges;
+}
 
+/*.dot {
+  stroke: #000;
+}*/
+
+.label {
+  font-style: normal;
+  fill: black;
+  font-size: 12px;
 }

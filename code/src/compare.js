@@ -101,7 +101,7 @@ function getData(country1, country2, file, max){
   dataList[0]= {value: value[0], country: country1};
   dataList[1]= {value: value[1], country: country2};
 
-
+  console.log(dataList);
   // call the drawBar function with the dataList
   drawBar(dataList, max);
 

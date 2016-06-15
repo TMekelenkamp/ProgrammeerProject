@@ -45,10 +45,10 @@ function temperature(){
 // settings for the map
 var map = new Datamap({element: document.getElementById('mapContainer'),
 setProjection: function(element) {
-    var projection = d3.geo.equirectangular()
-      .center([15, 10])
-      .rotate([4.4, 0])
-      .scale(600)
+    var projection = d3.geo.mercator()
+      .center([20, 12])
+      .rotate([4, 0])
+      .scale(450)
       .translate([element.offsetWidth / 2, element.offsetHeight + 200]);
     var path = d3.geo.path()
       .projection(projection);

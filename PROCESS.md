@@ -93,3 +93,13 @@ Kleine aanpassingen gemaakt aan de update functie en de css.
 
 # day 11
 Implementeren van de scatterplot en het maken van de labels aan en titels aan de barcharts.
+
+# day 12
+Heb ruzie met het maken van de scatterplot, om de een of andere reden append de plot niet.
+wanneer ik een andere functie op de zelfde div gebruik werkt het wel....
+
+# day 13
+Scatterplot is in beeld! Met nog steeds een bug er in, de plot komt alleen in beeld
+wanneer ik deze aanroep vanaf de compare functie(wanneer ik de compare knop indruk).
+Roep ik de functie ergens anders aan of on load dan komt er niets in beeld..
+Nu zorgen dat de dataset juist wordt doorgegeven.
