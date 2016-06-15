@@ -103,3 +103,8 @@ Scatterplot is in beeld! Met nog steeds een bug er in, de plot komt alleen in be
 wanneer ik deze aanroep vanaf de compare functie(wanneer ik de compare knop indruk).
 Roep ik de functie ergens anders aan of on load dan komt er niets in beeld..
 Nu zorgen dat de dataset juist wordt doorgegeven.
+
+update: scatterplot werkt! er kan gekozen worden tussen de verschillende jaren, en
+of er gekozen wordt tussen temperatuur of levensverwachting. Wel moet ik nog zorgen
+dat dots die en datapunt missen niet worden getoond. Ook hebben de barcharts hun
+tooltips.

@@ -2,7 +2,7 @@
 // 11167998
 // Universiteit van Amsterdam
 
-function drawBar(data, max){
+function drawBar(data, max, variable){
 
 // console.log(max);
 id = 'barContainer';
@@ -30,6 +30,13 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<strong>" + d.value + "</strong>";
+  })
+
 var svg = d3.select('#' + id).append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -37,6 +44,8 @@ var svg = d3.select('#' + id).append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  svg.call(tip);
 
   console.log(data);
   x.domain(data.map(function(d) { return d.country; }));
@@ -64,7 +73,16 @@ var svg = d3.select('#' + id).append("svg")
       .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.value); })
-      .attr("height", function(d) { return height - y(d.value); });
+      .attr("height", function(d) { return height - y(d.value); })
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
+
+  // d3.select('#barContainer svg')
+  //   .append("text")
+  //   .attr("x", 200)
+  //   .attr("y", 100)
+  //   .attr("text-anchor", "middle")
+  //   .text(variable);
 
 
 function type(d) {

@@ -10,29 +10,33 @@ function compare() {
 
   var max;
   var file;
+  var variable;
   for (var i = 0; i < 3; i++){
     if (i == 0){
       max = 1800000;
       file = "../dataset/changedJson/emission.json";
+      variable = "Co2 emission in kilotons: ";
     }
     else if(i == 1){
       max = 45;
       file = "../dataset/changedJson/temp.json";
+      variable = "Temperature in celcius: ";
     }
     else if(i == 2){
       max = 90;
       file = "../dataset/changedJson/life.json";
+      variable = "Life expectancy in years from birth: ";
     }
 
     console.log(i);
-    getData(country1, country2, file, max);
+    getData(country1, country2, file, max, variable);
   }
   // call the getData function to get the data for the 2 countries
   // getData(country1, country2, file, max);
 }
 
 // draws a line graph of the co2 data and another variable data
-function getData(country1, country2, file, max){
+function getData(country1, country2, file, max, variable){
 
   // load the json file with the data
   d3.json(file, function(error, data){
@@ -103,7 +107,7 @@ function getData(country1, country2, file, max){
 
   console.log(dataList);
   // call the drawBar function with the dataList
-  drawBar(dataList, max);
+  drawBar(dataList, max, variable);
 
 });
 }
