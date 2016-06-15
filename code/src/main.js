@@ -33,7 +33,7 @@ function scatterData(){
 
           var data3 = data.json
 
-          var choice = document.getElementById("selector").value;
+          var choice = document.getElementById("yearSelector").value;
           var emission = [];
           var data = [];
           for (var i = 0; i < 43; i++){
