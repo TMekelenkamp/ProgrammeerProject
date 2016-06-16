@@ -108,3 +108,8 @@ update: scatterplot werkt! er kan gekozen worden tussen de verschillende jaren, 
 of er gekozen wordt tussen temperatuur of levensverwachting. Wel moet ik nog zorgen
 dat dots die en datapunt missen niet worden getoond. Ook hebben de barcharts hun
 tooltips.
+
+# day 14
+alle onderdelen van de scatterplot werken, de onlcick op de map geeft aan hoe welk
+land je hebt geselecteerd van de scatterplot. Ook is er een reset knop om alle dots
+weer zichtbaar te maken. Barchart titels staan er in en de wordt correct vernieuwd.
