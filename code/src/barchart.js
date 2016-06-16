@@ -5,9 +5,7 @@
 function drawBar(data, max, variable){
 
 // console.log(max);
-id = 'barContainer';
-var div = d3.select('.chart')
-    .attr('id', id)
+console.log(variable);
 
 
 var data = data;
@@ -59,12 +57,10 @@ var svg = d3.select('#' + id).append("svg")
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("");
+      .append("text")
+      .attr("x", 5)
+      .attr("text-anchor", "top")
+      .text(variable);
 
   svg.selectAll(".bar")
       .data(data)
@@ -76,14 +72,6 @@ var svg = d3.select('#' + id).append("svg")
       .attr("height", function(d) { return height - y(d.value); })
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
-
-  // d3.select('#barContainer svg')
-  //   .append("text")
-  //   .attr("x", 200)
-  //   .attr("y", 100)
-  //   .attr("text-anchor", "middle")
-  //   .text(variable);
-
 
 function type(d) {
   d.country = +d.country;

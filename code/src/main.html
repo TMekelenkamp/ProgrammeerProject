@@ -20,6 +20,8 @@ Universiteit van Amsterdam -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
   <script src="../sources/datamaps.world.hires.min.js"></script>
   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+
 
   <!-- loaded scripts and stylesheets -->
   <link rel="stylesheet" type="text/css" href="main.css"/>
@@ -29,7 +31,7 @@ Universiteit van Amsterdam -->
   <!-- <script src="line.js"></script> -->
   <script src="barchart.js"></script>
   <script src="compare.js"></script>
-  <script src="scat.js"></script>
+  <script src="scatter.js"></script>
   <script src="main.js"></script>
 
 
@@ -74,6 +76,8 @@ Universiteit van Amsterdam -->
             <option value="temperature">Temperature</option>
             <option value="life">Life expectancy</option>
           </select>
+          <input id="button4" type="submit" name="button4" value="Show all dots" onclick="resetScatter();"/>
+
             <div class="scatter" style=" width: 960; height: 500px;"></div>
           </div>
 

@@ -68,8 +68,10 @@ setProjection: function(element) {
     data: dataList,
     done: function(datamap) {
         datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-          console.log((findCountry(countries, geography.properties.name)));
-          console.log(geography.properties.name);
+          d3.selectAll(".dot").attr("opacity", 0.3);
+          d3.selectAll(".dot").attr("r", 5);
+          d3.selectAll("#" + geography.properties.name).attr("opacity", 1);
+          d3.selectAll("#" + geography.properties.name).attr("r", 10);
         });
     },
     geographyConfig:{

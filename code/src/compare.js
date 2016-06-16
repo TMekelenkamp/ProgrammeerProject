@@ -4,6 +4,12 @@
 
 // function that compares two countries on temp, life, and co2
 function compare() {
+  id = 'barContainer';
+  var div = d3.select('.chart')
+      .attr('id', id)
+
+  div.selectAll('*').remove('barContainer');
+
   // get the input from the user forms
   var country1 = document.getElementById('field1').value;
   var country2 = document.getElementById('field2').value;
@@ -15,17 +21,17 @@ function compare() {
     if (i == 0){
       max = 1800000;
       file = "../dataset/changedJson/emission.json";
-      variable = "Co2 emission in kilotons: ";
+      variable = "Co2 emission in kilotons ";
     }
     else if(i == 1){
       max = 45;
       file = "../dataset/changedJson/temp.json";
-      variable = "Temperature in celcius: ";
+      variable = "Temperature in celcius ";
     }
     else if(i == 2){
       max = 90;
       file = "../dataset/changedJson/life.json";
-      variable = "Life expectancy in years from birth: ";
+      variable = "Life expectancy in years from birth ";
     }
 
     console.log(i);

@@ -1,38 +1,25 @@
 scatterData();
 
+// loads json data for the scatterplot, stores the required data in a list
+// and calls the scatterplot function
 function scatterData(){
 
-  // for (var i = 0; i < 3; i++){
-  //   if (i == 0){
-  //     max = 1800000;
-  //     file = "../dataset/changedJson/emission.json";
-  //   }
-  //   else if(i == 1){
-  //     max = 45;
-  //     file = "../dataset/changedJson/temp.json";
-  //   }
-  //   else if(i == 2){
-  //     max = 90;
-  //     file = "../dataset/changedJson/life.json";
-    // }
+  d3.json("../dataset/lifes.json", function(error, data){
+    if (error) alert ("Error loading country data");
 
+    var data1 = data.json;
 
-
-    d3.json("../dataset/lifes.json", function(error, data){
+    d3.json("../dataset/emission.json", function(error, data){
       if (error) alert ("Error loading country data");
 
-      var data1 = data.json;
+      var data2 = data.json;
 
-      d3.json("../dataset/emission.json", function(error, data){
-        if (error) alert ("Error loading country data");
-
-        var data2 = data.json;
-
-        d3.json("../dataset/temperatures.json", function(error, data){
+       d3.json("../dataset/temperatures.json", function(error, data){
           if (error) alert ("Error loading country data");
 
-          var data3 = data.json
+          var data3 = data.json;
 
+          // check the value of the selector and get the correct year data
           var choice = document.getElementById("yearSelector").value;
           var emission = [];
           var data = [];
@@ -49,16 +36,17 @@ function scatterData(){
             else if (choice == "2010"){
             data[i] = {country: data1[i].country, life: data1[i].tens, emission: data2[i].tens, temp: data3[i].tens};
             }
-
-            }
-
-          console.log(choice);
-
-
-          // console.log(data);
-          drawScatter(data);
+          }
+        // call the scatterplot function
+        drawScatter(data);
       });
     });
   });
-    // console.log(varData);
+}
+
+function resetScatter(){
+  // set the scatterplot dots back to default
+  d3.selectAll(".dot").attr("opacity", 1);
+  d3.selectAll(".dot").attr("r", 5);
+
 }
