@@ -9,18 +9,17 @@ Universiteit van Amsterdam -->
   <title>Programmeer project</title>
 
   <!-- bootstrap parts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../sources/bootstrap/jquery.min.js"></script>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <script src="../sources/bootstrap/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../sources/bootstrap/bootstrap.min.css">
 
   <!-- loaded libraries -->
-  <!-- <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script> -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-  <script src="../sources/datamaps.world.hires.min.js"></script>
-  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="../sources/d3/d3.min.js"></script>
+  <script src="../sources/datamaps/topojson.min.js"></script>
+  <script src="../sources/datamaps/datamaps.world.hires.min.js"></script>
+  <script src="../sources/d3/d3.tip.v0.6.3.js"></script>
+  <script src="../sources/d3/queue.v1.min.js"></script>
 
 
   <!-- loaded scripts and stylesheets -->
@@ -28,7 +27,6 @@ Universiteit van Amsterdam -->
   <script src="emissionMap.js"></script>
   <script src="temperatureMap.js"></script>
   <script src="lifeMap.js"></script>
-  <!-- <script src="line.js"></script> -->
   <script src="barchart.js"></script>
   <script src="compare.js"></script>
   <script src="scatter.js"></script>
@@ -41,7 +39,6 @@ Universiteit van Amsterdam -->
 
 <!-- classes for the nav bar -->
 <div class="container">
-  <h2>Thom Mekelenkamp</h2>
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#indexTab">Index</a></li>
     <li><a data-toggle="tab" href="#mapTab">Map</a></li>
@@ -59,7 +56,7 @@ Universiteit van Amsterdam -->
       <!-- classes for the map and buttons with graph -->
       <div id="mapTab" class="tab-pane fade">
         <div class="mapButtons">
-          <div class="map" style=" width: 1200px; height: 500px;"></div>
+          <div class="map" style=" width: 1100px; height: 500px;"></div>
             <div class="buttons">
               <br><input id="button1" type="submit" name="button1" value="Co2 emission" onclick="emission();"/></br>
               <br><input id="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" /></br>

@@ -21,7 +21,7 @@ function drawScatter(data, value){
   }
 
   // set margins and sizes for the plot
-  var margin = {top: 20, right: 40, bottom: 100, left: 100},
+  var margin = {top: 20, right: 40, bottom: 100, left: 50},
     width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
@@ -29,7 +29,7 @@ function drawScatter(data, value){
   var color = d3.scale.category10();
 
   // define the x axis scale
-  var x = d3.scale.sqrt()
+  var x = d3.scale.linear()
     .range([0, width]);
     // .ticks(10);
 

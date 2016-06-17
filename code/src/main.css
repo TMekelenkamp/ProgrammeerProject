@@ -8,13 +8,38 @@
 }
 
 
-.comparison {
+.nav-bar{
   width: 100%;
-  /*overflow: hidden;*/
+}
+.nav-tabs{
+width: 100%;
+background-color: green;
+color: black;
+
+}
+/*.tab-content{
+  /*background-color:#303136;*/
+
+/*}*/
+.nav-tabs > li > a{
+border: medium none;
+color: white;
+}
+.nav-tabs:hover{
+background-color: #green !important;
+  border: medium none;
+  border-radius: 0;
+  color:black;
 }
 
-#field1, #field2 {
-    align-self: center;
+.comparison {
+  width: 100%;
+}
+
+label  {
+  display: inline-block;
+  position: center;
+  float: center;
 }
 
 .container {
@@ -22,7 +47,8 @@
 }
 
 .mapButtons {
-    width: 1400px;
+    max-width: 1300px;
+    width: auto;
     overflow: hidden;
 }
 
@@ -33,7 +59,7 @@
 }
 
 .datamaps-legend {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: : center;
     right: -50px;
     top: 0;
@@ -94,10 +120,10 @@ g {
 }
 
 rect:hover{
-  fill: lightsteelblue;
+  fill: #ff8533;
 }
 .bar {
-  fill: steelblue;
+  fill: #cc5200;
 }
 
 /*.axis path,*/
