@@ -22,8 +22,12 @@ Universiteit van Amsterdam -->
   <script src="../sources/d3/queue.v1.min.js"></script>
 
 
-  <!-- loaded scripts and stylesheets -->
-  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <!-- loaded stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/compare.css"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/map.css"/>
+
+  <!-- loaded scripts -->
   <script src="emissionMap.js"></script>
   <script src="temperatureMap.js"></script>
   <script src="lifeMap.js"></script>
@@ -56,41 +60,38 @@ Universiteit van Amsterdam -->
       <!-- classes for the map and buttons with graph -->
       <div id="mapTab" class="tab-pane fade">
         <div class="mapButtons">
-          <div class="map" style=" width: 1100px; height: 500px;"></div>
-            <div class="buttons">
-              <br><input id="button1" type="submit" name="button1" value="Co2 emission" onclick="emission();"/></br>
-              <br><input id="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" /></br>
-              <br><input id="button3" type="submit" name="button3" value="Life expectancy" onclick="life();" /></br>
-            </div>
+            <input id="button1" type="submit" name="button1" value="Co2 emission" onclick="emission();"/>
+            <input id="button2" type="submit" name="button2" value="Temperature" onclick="temperature();" />
+            <input id="button3" type="submit" name="button3" value="Life expectancy" onclick="life();" />
+            <div class="map"></div>
           </div>
-          <select id="yearSelector" onchange="scatterData();">
-            <option value="1980">1980</option>
-            <option value="1990">1990</option>
-            <option value="2000">2000</option>
-            <option value="2010">2010</option>
-          </select>
-          <select id="dataSelector" onchange="scatterData();">
-            <option value="temperature">Temperature</option>
-            <option value="life">Life expectancy</option>
-          </select>
-          <input id="button4" type="submit" name="button4" value="Show all dots" onclick="resetScatter();"/>
-
-            <div class="scatter" style=" width: 960; height: 500px;"></div>
-          </div>
-
-      <!-- </div> -->
+          <div class="selectors">
+            <select id="yearSelector" onchange="scatterData();">
+              <option value="1980">1980</option>
+              <option value="1990">1990</option>
+              <option value="2000">2000</option>
+              <option value="2010">2010</option>
+            </select>
+            <select id="dataSelector" onchange="scatterData();">
+              <option value="temperature">Temperature</option>
+              <option value="life">Life expectancy</option>
+            </select>
+            <input id="button4" type="submit" name="button4" value="Show all dots" onclick="resetScatter();"/>
+        </div>
+          <div class="scatter" style=" width: 1140; height: 500px;"></div>
+      </div>
 
       <!-- classes for the comparison with barcharts -->
       <div id="comparisonTab" class="tab-pane fade">
-        <h3>Comparison</h3>
+        <h3>Choose two countries to compare</h3>
         <div class="comparison">
           <select id="field1"></select>
-          <select id="field2"></select>
-          <!-- <input id="field1" type="input" value="russia" placeholder="Country 1"></input>
-          <input id="field2" type="input" value="france" placeholder="Country 2"></input> -->
           <input id="button4" type="submit" value="Compare" onclick="compare();"></input>
+          <select id="field2"></select>
         </div>
-        <div class="chart" style=" width: 960; height: 500px;"></div>
+        <div class"barchart">
+          <div class="chart" style=" width: 960; height: 500px;"></div>
+        </div>
       </div>
 
       <!-- classes for the disclaimer tab -->

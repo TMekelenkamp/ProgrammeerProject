@@ -48,5 +48,6 @@ van dataset(temp of levensverwachting).
   - tooltip map
   - scatter dots verbergen die data missen
   - disclaimer schrijven
-  - index schrijven 
+  - index schrijven
   V - kleuren barcharts
+  V (behalve legend)- alignen van onderdelen 

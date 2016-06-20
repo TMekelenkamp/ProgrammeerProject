@@ -1,12 +1,16 @@
 /*Thom Mekelenkamp
   11167998
   Universiteit van Amsterdam*/
-#barContainer, .chart {
+/*#barContainer, .chart {
   padding-left: 50px;
   margin-left: 50px;
   margin-top: 50px;
-}
+}*/
 
+.comparison, .chart, .mapButtons {
+  text-align: center;
+  width: 100%;
+}
 
 .nav-bar{
   width: 100%;
@@ -23,80 +27,19 @@ color: black;
 /*}*/
 .nav-tabs > li > a{
 border: medium none;
-color: white;
+color: black;
 }
 .nav-tabs:hover{
-background-color: #green !important;
+  background-color: #green !important;
   border: medium none;
   border-radius: 0;
   color:black;
 }
 
-.comparison {
-  width: 100%;
-}
 
-label  {
-  display: inline-block;
-  position: center;
-  float: center;
-}
 
-.container {
-  width: 100%;
-}
 
-.mapButtons {
-    max-width: 1300px;
-    width: auto;
-    overflow: hidden;
-}
 
-.buttons {
-    float: right;
-    overflow: hidden;
-    margin-top: 80px;
-}
-
-.datamaps-legend {
-    margin-top: 50px;
-    text-align: : center;
-    right: -50px;
-    top: 0;
-}
-
-#button1, #button2, #button3 {
-    border-radius: 4px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    width: 200px;
-}
-
-#button1:hover, #button2:hover, #button3:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-}
-
-#button1 {
-    background-color: #cca300;
-}
-
-#button2 {
-    background-color: #cc5200;
-}
-
-#button3 {
-    background-color: #cc0052;
-}
-
-.map {
-  /*background-color: rgba(0, 77, 153,0.5);*/
-  margin-top: 100px;
-  float: left;
-}
 
 .axis path, .axis line {
   fill: none;
@@ -119,12 +62,6 @@ g {
     pointer-events: all;
 }
 
-rect:hover{
-  fill: #ff8533;
-}
-/*.bar {
-  fill: #cc5200;
-}*/
 
 /*.axis path,*/
 .y-axis, .x-axis {

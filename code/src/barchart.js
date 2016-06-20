@@ -40,7 +40,6 @@ var svg = d3.select('#' + id).append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   svg.call(tip);
-
   x.domain(data.map(function(d) { return d.country; }));
   y.domain([0, max]);
 

@@ -67,8 +67,6 @@ function compare() {
       variable = "Life expectancy in years from birth ";
       fill = '#cc0052';
     }
-    console.log(country1);
-    console.log(country2);
     getData(country1, country2, file, max, variable, fill);
   }
   // call the getData function to get the data for the 2 countries
@@ -83,17 +81,10 @@ function getData(country1, country2, file, max, variable, fill){
     if (error) alert ("Error loading country data");
   // store the data from the json in a variable
   var data = data.json
-  console.log(file);
-  console.log(data);
+
   // console.log(data);
   // function that gets the county data that fits the country from the map
   function findCountry(country, data){
-    console.log("---------------------------")
-    console.log(country);
-    console.log(data);
-    console.log(data[0][key]);
-    console.log("---------------------------")
-
     var key = country;
     var object = data[0][key];
     return object;
@@ -112,15 +103,9 @@ function getData(country1, country2, file, max, variable, fill){
   country1 = firstToUpperCase(country1);
   country2 = firstToUpperCase(country2);
 
-  console.log(data);
-  console.log(country1);
-  console.log(country2);
   // store the country data in a variable
   var dataset1 = findCountry(country1, data);
   var dataset2 = findCountry(country2, data);
-
-  console.log(dataset1);
-  console.log(dataset2);
 
   // create 2 lists for the data to use in the graph
   var date = ['2010', '2000', '1990', '1980'];
@@ -137,6 +122,5 @@ function getData(country1, country2, file, max, variable, fill){
 
   // call the drawBar function with the dataList
   drawBar(dataList, max, variable, fill);
-
 });
 }

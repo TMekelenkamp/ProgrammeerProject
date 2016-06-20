@@ -113,3 +113,21 @@ tooltips.
 alle onderdelen van de scatterplot werken, de onlcick op de map geeft aan hoe welk
 land je hebt geselecteerd van de scatterplot. Ook is er een reset knop om alle dots
 weer zichtbaar te maken. Barchart titels staan er in en de wordt correct vernieuwd.
+
+# day 15
+kleine aanpassingen voor testen van de scatterplot functies voor de presentatie.
+
+# weekend 3
+
+# day 16
+input velden van de compare pagina vervangen voor dropdowns. Barcharts krijgen nu
+ook een code mee om de kleur van de 3 verschillende barcharts te veranderen. knoppen
+staan nu in het midden van de pagina met een korte titel er boven.
+
+css files staan nu in een aparte map om zo het overzicht tussen alle soorten files
+te bewaren. ook zijn de files nu uit elkaar gehaald om de grote bende die main.css was
+op te ruimen.
+
+Ook de map pagina is nu gecentreerd alleen wilt de datamaps legend daar niet aan
+mee doen... proberen dat morgen te fixen samen met de hoverinfo bug van de
+scatterplot. daarna nummers afronden en wat text schrijven.
