@@ -122,9 +122,9 @@ g {
 rect:hover{
   fill: #ff8533;
 }
-.bar {
+/*.bar {
   fill: #cc5200;
-}
+}*/
 
 /*.axis path,*/
 .y-axis, .x-axis {

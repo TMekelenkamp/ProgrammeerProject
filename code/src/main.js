@@ -3,7 +3,7 @@ scatterData();
 // loads json data for the scatterplot, stores the required data in a list
 // and calls the scatterplot function
 function scatterData(){
-
+  console.log(value);
   d3.json("../dataset/lifes.json", function(error, data){
     if (error) alert ("Error loading country data");
 
@@ -48,5 +48,26 @@ function resetScatter(){
   // set the scatterplot dots back to default
   d3.selectAll(".dot").attr("opacity", 1);
   d3.selectAll(".dot").attr("r", 5);
+}
 
+createSelectors("field1");
+createSelectors("field2");
+
+
+function createSelectors(country){
+
+  d3.json("../dataset/landen.json", function(error, data){
+    if (error) alert ("Error loading country data");
+    var data = data.json;
+
+  for (var i = 0; i < 43; i++){
+      // console.log(data[i + 1].country)
+    select = document.getElementById(country);
+     var opt = document.createElement('option');
+     opt.value = data[i + 1].country;
+     opt.innerHTML = data[i + 1].country;
+     select.appendChild(opt);
+
+  }    // console.log(data);
+  });
 }

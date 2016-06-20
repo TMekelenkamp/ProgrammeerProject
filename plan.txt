@@ -38,3 +38,15 @@ van dataset(temp of levensverwachting).
   check format time voor de x-as data.
 
   zoeken op key van de json, indien gevonden object in een var stoppen en dan deze var.data & var.value
+
+
+  --------------------
+  --------------------
+
+  V - dropdown
+  - tooltip scatterplot
+  - tooltip map
+  - scatter dots verbergen die data missen
+  - disclaimer schrijven
+  - index schrijven 
+  V - kleuren barcharts

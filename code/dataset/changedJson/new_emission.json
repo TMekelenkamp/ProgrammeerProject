@@ -167,7 +167,7 @@
    "nineties":"51946.722",
    "eighties":"71759.523"
  },
- "Czech Republic": {
+ "Czech": {
    "capital":"Prague",
    "tens":"111168.772",
    "zeros":"123684.243",
@@ -230,14 +230,14 @@
    "nineties":"No data",
    "eighties":"No data"
  },
- "Liecheightiestein": {
+ "Liechtenstein": {
    "capital":"Vaduz",
    "tens":"58.672",
    "zeros":"No data",
    "nineties":"No data",
    "eighties":"No data"
  },
- "Bosnia and Herzegovina ": {
+ "Bosnia": {
    "capital":"Sarajevo",
    "tens":"21147.589",
    "zeros":"13787.92",

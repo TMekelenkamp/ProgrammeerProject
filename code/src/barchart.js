@@ -2,11 +2,7 @@
 // 11167998
 // Universiteit van Amsterdam
 
-function drawBar(data, max, variable){
-
-// console.log(max);
-console.log(variable);
-
+function drawBar(data, max, variable, fill){
 
 var data = data;
 
@@ -45,7 +41,6 @@ var svg = d3.select('#' + id).append("svg")
 
   svg.call(tip);
 
-  console.log(data);
   x.domain(data.map(function(d) { return d.country; }));
   y.domain([0, max]);
 
@@ -70,6 +65,7 @@ var svg = d3.select('#' + id).append("svg")
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.value); })
       .attr("height", function(d) { return height - y(d.value); })
+      .style("fill", fill)
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide);
 

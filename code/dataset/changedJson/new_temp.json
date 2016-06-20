@@ -69,7 +69,7 @@
    "nineties":"34",
    "eighties":"28"
  },
- "United Kingdom": {
+ "Uk": {
    "capital":"London",
    "tens":"31",
    "zeros":"31",
@@ -167,7 +167,7 @@
    "nineties":"27",
    "eighties":"26"
  },
- "Czech Republic": {
+ "Czech": {
    "capital":"Prague",
    "tens":"34",
    "zeros":"33",
@@ -237,7 +237,7 @@
    "nineties":"No data",
    "eighties":"No data"
  },
- "Bosnia and Herzegovina ": {
+ "Bosnia": {
    "capital":"Sarajevo",
    "tens":"36",
    "zeros":"39",
