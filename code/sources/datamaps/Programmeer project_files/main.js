@@ -1,4 +1,3 @@
-// call the function to draw the scatterplot on loading the page
 scatterData();
 
 // loads json data for the scatterplot, stores the required data in a list
@@ -45,31 +44,30 @@ function scatterData(){
   });
 }
 
-// function that resets scatter dots when "show all dots" is pressed
 function resetScatter(){
   // set the scatterplot dots back to default
   d3.selectAll(".dot").attr("opacity", 1);
   d3.selectAll(".dot").attr("r", 5);
 }
 
-  // call selector function
-  createSelectors("field1");
-  createSelectors("field2");
+createSelectors("field1");
+createSelectors("field2");
 
-// loads a list of countries and writes them into a selector
+
 function createSelectors(country){
-  // load list of countries
+
   d3.json("../dataset/landen.json", function(error, data){
     if (error) alert ("Error loading country data");
     var data = data.json;
 
-  // append countries to the selector
-  for (var i = 0; i < 41; i++){
+  for (var i = 0; i < 43; i++){
+      // console.log(data[i + 1].country)
     select = document.getElementById(country);
-    var opt = document.createElement('option');
-    opt.value = data[i + 1].country;
-    opt.innerHTML = data[i + 1].country;
-    select.appendChild(opt);
-  }
+     var opt = document.createElement('option');
+     opt.value = data[i + 1].country;
+     opt.innerHTML = data[i + 1].country;
+     select.appendChild(opt);
+
+  }    // console.log(data);
   });
 }

@@ -6,7 +6,8 @@ h2 {
     /*margin-right: auto;
     margin-left: auto*/
     top: 80px;
-    margin-left: 460px;
+    display: inline;
+    /*margin-auto;*/
     /*margin: 0 auto;*/
   }
 

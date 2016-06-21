@@ -20,6 +20,7 @@ function drawScatter(data, value){
     value = "Life expectancy in years from birth";
   }
 
+  console.log(choice);
   // set margins and sizes for the plot
   var margin = {top: 20, right: 40, bottom: 100, left: 50},
     width = 1000 - margin.left - margin.right,
@@ -48,7 +49,7 @@ function drawScatter(data, value){
     .scale(y)
     .orient("left");
 
-  // define the tooltip and check what data should be displayed
+  // define the tooltip
   if (choice == "temperature"){
     var tip = d3.tip()
       .attr('class', 'd3-tip')
@@ -69,6 +70,7 @@ function drawScatter(data, value){
         '<br>Emission: ' +  d.emission
       })
   }
+
 
   // define the svg and select the correct container
   var svg = d3.select('#' + id).append("svg")

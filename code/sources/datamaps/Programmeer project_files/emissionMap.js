@@ -1,10 +1,13 @@
 // Thom Mekelenkamp
 // 11167998
 // Universiteit van Amsterdam
+//
+// window.onload = emission();
 
-function temperature(){
 
-  d3.json("../dataset/temperatures.json", function(error, data){
+function emission(){
+
+  d3.json("../dataset/emission.json", function(error, data){
   if (error) {return console.warn(error)};
 
       var data = data.json
@@ -22,16 +25,16 @@ function temperature(){
       // check colors for the map
       for (var i = 0; i < data.length; i++) {
           code = findCountry(countries, data[i].country)
-          if (data[i].tens < 25) {
+          if (data[i].tens < 50000) {
               color = 'data1';
           }
-          else if (data[i].tens < 30) {
+          else if (data[i].tens < 150000) {
               color = 'data2'
           }
-          else if (data[i].tens < 35) {
+          else if (data[i].tens < 500000) {
               color = 'data3';
           }
-          else if (data[i].tens < 40) {
+          else if (data[i].tens > 500000) {
               color = 'data4';
           }
           else {
@@ -56,10 +59,10 @@ setProjection: function(element) {
     return {path: path, projection: projection};
   },
     fills: {
-        data1: '#ffa366',
-        data2: '#ff8533',
-        data3: '#ff6600',
-        data4: '#cc5200',
+        data1: '#ffe066',
+        data2: '#ffd633',
+        data3: '#ffcc00',
+        data4: '#cca300',
         defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,
@@ -87,16 +90,15 @@ setProjection: function(element) {
   });
 
   map.legend({
-  legendTitle : "Temperature in Celcius",
+  legendTitle : "Co2 emissions in kilotons",
   defaultFillName: "No data",
   labels: {
-    data1: "< 25",
-    data2: "< 30",
-    data3: "< 35",
-    data4: "< 40,"
+    data1: "< 50.000",
+    data2: "< 150.000",
+    data3: "< 500.000",
+    data4: "> 500.000"
   }
 });
-
 
   function findCountry(array, value){
       // loop that finds the country code for every country on the map

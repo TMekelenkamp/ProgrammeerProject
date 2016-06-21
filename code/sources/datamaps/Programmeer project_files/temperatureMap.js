@@ -73,7 +73,7 @@ setProjection: function(element) {
     },
     geographyConfig:{
       popupTemplate: function(geography, dataList) {
-          if (!dataList) { return ; }
+          // if (!dataList) { return ; }
           return['<div class="hoverinfo"><strong>' + geography.properties.name + '</strong>' +
           ' <br>2010: ' + dataList.tens +
           ' <br>2000: ' + dataList.zeros +

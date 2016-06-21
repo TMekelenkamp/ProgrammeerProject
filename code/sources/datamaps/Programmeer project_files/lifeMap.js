@@ -2,17 +2,18 @@
 // 11167998
 // Universiteit van Amsterdam
 
-function temperature(){
+function life(){
 
-  d3.json("../dataset/temperatures.json", function(error, data){
+  d3.json("../dataset/lifes.json", function(error, data){
   if (error) {return console.warn(error)};
 
-      var data = data.json
 
       var div = d3.select('.map')
           .attr('id', 'mapContainer')
 
       div.selectAll('*').remove('mapContainer');
+
+      var data = data.json
 
       var countries = Datamap.prototype.worldTopo.objects.world.geometries;
 
@@ -22,16 +23,16 @@ function temperature(){
       // check colors for the map
       for (var i = 0; i < data.length; i++) {
           code = findCountry(countries, data[i].country)
-          if (data[i].tens < 25) {
+          if (data[i].tens < 70) {
               color = 'data1';
           }
-          else if (data[i].tens < 30) {
+          else if (data[i].tens < 75) {
               color = 'data2'
           }
-          else if (data[i].tens < 35) {
+          else if (data[i].tens < 80) {
               color = 'data3';
           }
-          else if (data[i].tens < 40) {
+          else if (data[i].tens < 90) {
               color = 'data4';
           }
           else {
@@ -56,10 +57,10 @@ setProjection: function(element) {
     return {path: path, projection: projection};
   },
     fills: {
-        data1: '#ffa366',
-        data2: '#ff8533',
-        data3: '#ff6600',
-        data4: '#cc5200',
+        data1: '#ff66a3',
+        data2: '#ff3385',
+        data3: '#ff0066',
+        data4: '#cc0052',
         defaultFill: 'rgba(107, 107, 71,0.6)'
     },
     data: dataList,
@@ -73,7 +74,7 @@ setProjection: function(element) {
     },
     geographyConfig:{
       popupTemplate: function(geography, dataList) {
-          if (!dataList) { return ; }
+          // if (!dataList) { return ; }
           return['<div class="hoverinfo"><strong>' + geography.properties.name + '</strong>' +
           ' <br>2010: ' + dataList.tens +
           ' <br>2000: ' + dataList.zeros +
@@ -87,16 +88,15 @@ setProjection: function(element) {
   });
 
   map.legend({
-  legendTitle : "Temperature in Celcius",
+  legendTitle : "Life expectancy from birth in years",
   defaultFillName: "No data",
   labels: {
-    data1: "< 25",
-    data2: "< 30",
-    data3: "< 35",
-    data4: "< 40,"
+    data1: "< 70",
+    data2: "< 75",
+    data3: "< 80",
+    data4: "< 90,"
   }
 });
-
 
   function findCountry(array, value){
       // loop that finds the country code for every country on the map

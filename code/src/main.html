@@ -26,6 +26,8 @@ Universiteit van Amsterdam -->
   <link rel="stylesheet" type="text/css" href="../stylesheets/main.css"/>
   <link rel="stylesheet" type="text/css" href="../stylesheets/compare.css"/>
   <link rel="stylesheet" type="text/css" href="../stylesheets/map.css"/>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/disclaimer.css"/>
+
 
   <!-- loaded scripts -->
   <script src="emissionMap.js"></script>
@@ -55,6 +57,8 @@ Universiteit van Amsterdam -->
 
       <!-- classes for the index -->
       <div id="indexTab" class="tab-pane">
+        <img src="../pic/milieudefensie_logo.png" ></img>
+        <p>https://milieudefensie.nl/publicaties/factsheets/informatieblad-luchtvervuiling-en-de-gevolgen-voor-onze-gezondheid</p>
       </div>
 
       <!-- classes for the map and buttons with graph -->
@@ -97,7 +101,26 @@ Universiteit van Amsterdam -->
       <!-- classes for the disclaimer tab -->
       <div id="disclaimerTab" class="tab-pane fade">
         <h3>Disclaimer</h3>
-        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div class="disclaimer">
+          <p><strong>The sources of information on this page are from:</strong>
+            <br>
+            <br><strong>Temperature data:</strong>
+            <br>https://weatherspark.com
+            <br>
+            <br><strong>Co2 data:</strong>
+            <br>http://data.worldbank.org/indicator/EN.ATM.CO2E.KT/countries/1W?display=default
+            <br>
+            <br><strong>Life expectancy data:</strong>
+            <br>http://data.worldbank.org/indicator/SP.DYN.LE00.IN/countries?display=default
+            <br>
+            <br>The visualizations regarding the temperature of the european countries
+            are made with data of the hottest days of the year in the capital city
+            of that country. Because of that there is a big difference in the actual
+            hottest temperature in the capital according to the rest of the country.
+            That means that the used temperature is not representative for the whole
+            country.
+            </p>
+          </div
       </div>
     </div>
   </div>

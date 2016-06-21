@@ -131,3 +131,7 @@ op te ruimen.
 Ook de map pagina is nu gecentreerd alleen wilt de datamaps legend daar niet aan
 mee doen... proberen dat morgen te fixen samen met de hoverinfo bug van de
 scatterplot. daarna nummers afronden en wat text schrijven.
+
+# day 17
+De dots van de scatterplot verdwijnen wanneer er een datapunt mist. hierdoor
+zijn er geen dots meer die tegen de y as aan plakken omdat er een punt mist.
