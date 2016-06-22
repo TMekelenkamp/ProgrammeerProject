@@ -44,10 +44,10 @@ van dataset(temp of levensverwachting).
   --------------------
 
   V - dropdown
-  - tooltip scatterplot
-  - tooltip map
+  V - tooltip scatterplot
+  V - tooltip map
   V - scatter dots verbergen die data missen
-  - disclaimer schrijven
+  V disclaimer schrijven
   - index schrijven
   V - kleuren barcharts
   V (behalve legend)- alignen van onderdelen

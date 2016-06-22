@@ -1,34 +1,40 @@
+/*Thom Mekelenkamp
+  11167998
+  Universiteit van Amsterdam*/
+
+/* align the title to the center*/
 h2 {
   text-align: center;
 }
 
+/* position the legend of the map*/
 .datamaps-legend {
-    /*margin-right: auto;
-    margin-left: auto*/
-    top: 80px;
-    margin-left: 460px;
-    /*margin: 0 auto;*/
-  }
+  top: 80px;
+  margin-left: 460px;
+}
 
+/* define the map size and position*/
 .map {
-  /*margin-left: 100px;*/
   margin-top: 90px;
   text-align: center;
   width: 1140px;
   height: 500px;"
 }
 
-#button1, #button2, #button3, #button4 {
+/* change the formatting of the buttons*/
+#button1, #button2, #button3, #button4, #button5 {
     text-align: center;
     font-size: 16px;
     width: 160px;
     margin-top: 10px;
 }
 
-#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+/* create a shadow on hover for the buttons*/
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5L:hover {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* align the selectors */
 .selectors {
   text-align: center;
 }

@@ -1,31 +1,43 @@
+/* Thom Mekelenkamp
+   11167998
+   Universiteit van Amsterdam*/
+
+/* align the titles to the center of the page*/
 h3 {
   text-align: center;
 }
 
+/* give the selectors a better look(the ones of the map page too)*/
+select {
+    margin: 15px;
+    border: 1px solid #111;
+    background: transparent;
+    width: 210px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+}
+
+/* make sure that there is enough space on the top of the barcharts*/
 #barContainer {
   margin-top: 50px;
 }
 
+/* style the x and y axes*/
 .axis path, .axis line {
   fill: none;
 	stroke: black;
-	shape-rendering: crispe;
+	shape-rendering: crispedges;
 }
 
+/* define the text font and size*/
 text {
   font-family: arial;
 	font-size: 16px;
 }
 
-.line{
-	fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-rect:hover{
-  fill: #ff8533;
-}
+/* make the tooltip*/
 .d3-tip {
   line-height: 1;
   font-weight: bold;

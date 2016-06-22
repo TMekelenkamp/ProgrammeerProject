@@ -1,10 +1,20 @@
+/* Thom Mekelenkamp
+   11167998
+   Universiteit van Amsterdam*/
+
+/* position the content of the div to te center of the screen*/
 .disclaimer {
-  width: 600px;
   text-align: center;
-  margin-left: 100px
 }
 
+/* make sure that the title is in the correct position*/
+h3 {
+  text-align: center;
+}
 
+/* create a margin to place the text in the centre aligned to the left*/
 p {
   text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
 }

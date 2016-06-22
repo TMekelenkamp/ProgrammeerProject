@@ -135,3 +135,8 @@ scatterplot. daarna nummers afronden en wat text schrijven.
 # day 17
 De dots van de scatterplot verdwijnen wanneer er een datapunt mist. hierdoor
 zijn er geen dots meer die tegen de y as aan plakken omdat er een punt mist.
+
+# day 18
+Selectors opgemaakt zodat ze beter bij de rest van de opmaak passen.
+De discailmer, index en kleine titels geschreven. Navbar moet nog over de hele
+breedte van de pagina komen. ook bezig met verslag. 

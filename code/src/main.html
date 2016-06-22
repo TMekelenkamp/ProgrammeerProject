@@ -45,7 +45,7 @@ Universiteit van Amsterdam -->
 
 <!-- classes for the nav bar -->
 <div class="container">
-  <ul class="nav nav-tabs">
+  <ul class="nav nav-tabs navbar-fixed-top navbar-header">
     <li class="active"><a data-toggle="tab" href="#indexTab">Index</a></li>
     <li><a data-toggle="tab" href="#mapTab">Map</a></li>
     <li><a data-toggle="tab" href="#comparisonTab">Comparison</a></li>
@@ -56,10 +56,13 @@ Universiteit van Amsterdam -->
   <div class="tab-content">
 
       <!-- classes for the index -->
-      <div id="indexTab" class="tab-pane">
+      <div id="indexTab" class="tab-pane in active">
+        <div class="indexText">
+
         <img src="../pic/milieudefensie_logo.png" ></img>
-        <p>https://milieudefensie.nl/publicaties/factsheets/informatieblad-luchtvervuiling-en-de-gevolgen-voor-onze-gezondheid</p>
+
       </div>
+    </div>
 
       <!-- classes for the map and buttons with graph -->
       <div id="mapTab" class="tab-pane fade">
@@ -87,10 +90,10 @@ Universiteit van Amsterdam -->
 
       <!-- classes for the comparison with barcharts -->
       <div id="comparisonTab" class="tab-pane fade">
-        <h3>Choose two countries to compare</h3>
         <div class="comparison">
+          <h3>Choose two countries to compare</h3>
           <select id="field1"></select>
-          <input id="button4" type="submit" value="Compare" onclick="compare();"></input>
+          <input id="button5" type="submit" value="Compare" onclick="compare();"></input>
           <select id="field2"></select>
         </div>
         <div class"barchart">
@@ -100,8 +103,8 @@ Universiteit van Amsterdam -->
 
       <!-- classes for the disclaimer tab -->
       <div id="disclaimerTab" class="tab-pane fade">
-        <h3>Disclaimer</h3>
         <div class="disclaimer">
+          <h3>Disclaimer</h3>
           <p><strong>The sources of information on this page are from:</strong>
             <br>
             <br><strong>Temperature data:</strong>
@@ -119,8 +122,9 @@ Universiteit van Amsterdam -->
             hottest temperature in the capital according to the rest of the country.
             That means that the used temperature is not representative for the whole
             country.
+            <br>
             </p>
-          </div
+            <p1>Thom Mekelenkamp 11167998</p1>
       </div>
     </div>
   </div>

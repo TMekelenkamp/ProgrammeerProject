@@ -54,7 +54,7 @@ function drawScatter(data, value){
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(function(d) {
-        return '<strong>' + d.country +  "</strong>"
+        return '<strong>' + d.country +  "</strong>" +
         '<br>Temperature: ' + d.temp +
         '<br>Emission: ' + d.emission
       })

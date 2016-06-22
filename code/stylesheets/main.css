@@ -1,113 +1,39 @@
 /*Thom Mekelenkamp
   11167998
   Universiteit van Amsterdam*/
-/*#barContainer, .chart {
-  padding-left: 50px;
-  margin-left: 50px;
+
+/* make sure the top comes out under the navbar*/
+.indexText, .mapButtons, .comparison, .disclaimer {
   margin-top: 50px;
-}*/
-body > * {
-  /*display: inline-block;*/
-  text-align: center;
-}
-.comparison, .chart, .mapButtons {
-  text-align: center;
-  width: 100%;
 }
 
+/* align all the body content to the center*/
+body > * {
+  text-align: center;
+}
+
+/* place the navbar over the whole width of the page*/
 .nav-bar{
   width: 100%;
 }
+
+/* make up the tabs*/
 .nav-tabs{
-width: 100%;
-background-color: green;
-color: black;
-
+  width: 100%;
+  background-color: green;
+  color: black;
 }
-/*.tab-content{
-  /*background-color:#303136;*/
 
-/*}*/
+/* set the color and the borders of the tabs*/
 .nav-tabs > li > a{
 border: medium none;
-color: black;
+color: white;
 }
+
+/* define settings for on hover*/
 .nav-tabs:hover{
-  background-color: #green !important;
+  background-color: green;
   border: medium none;
   border-radius: 0;
   color:black;
-}
-
-
-
-
-
-
-.axis path, .axis line {
-  fill: none;
-	stroke: black;
-	shape-rendering: crispe;
-}
-
-text {
-  font-family: arial;
-	font-size: 16px;
-}
-
-.line{
-	fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-g {
-    pointer-events: all;
-}
-
-
-/*.axis path,*/
-.y-axis, .x-axis {
-  /*fill: none;*/
-  /*stroke: #000;*/
-  shape-rendering: crispEdges;
-}
-
-/*.dot {
-  stroke: #000;
-}*/
-
-.label {
-  font-style: normal;
-  fill: black;
-  font-size: 12px;
-}
-
-.d3-tip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
-}
-
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
-
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
 }
