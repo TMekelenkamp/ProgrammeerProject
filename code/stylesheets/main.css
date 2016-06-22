@@ -3,12 +3,18 @@
   Universiteit van Amsterdam*/
 
 /* make sure the top comes out under the navbar*/
-.indexText, .mapButtons, .comparison, .disclaimer {
+.indexImage, .mapButtons, .comparison, .disclaimer {
   margin-top: 50px;
 }
 
 /* align all the body content to the center*/
 body > * {
+  text-align: center;
+}
+
+/* align the index text to the center of the page*/
+.indexText {
+  margin-top: 20px;
   text-align: center;
 }
 
