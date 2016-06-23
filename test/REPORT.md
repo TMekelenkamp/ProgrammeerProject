@@ -233,7 +233,7 @@ Persoonlijk vind ik deze manier van kiezen beter dan de invoervelden die ik eers
 Het is minder werk voor mij om alles goed te laten verlopen zonder errors en het is
 minder frustrerend voor de user.
 
-# Visualisaties
+# Keuzes
 welke Visualisaties en waarom
 
 * Map
