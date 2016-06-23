@@ -173,3 +173,23 @@ Ik vind het persoonlijk de beste oplossing voor dit probleem. Andere mensen om m
 gevraagd had hadden ook geen oplossing voor dit probleem. 1 iemand had het zelfde probleem en
 met ook een soortgelijke oplossing. Er zijn mogelijk betere manieren om dit op te lossen
 alleen kon ik binnen de tijd die ik stelde voor het maken van de plot geen andere manier bedenken.
+
+# Keuzes
+welke Visualisaties en waarom
+
+* Map
+De wereldkaart was voor mij een goede manier om door middel van kleuren de verschillen
+tussen de Europese landen onderling visueel te maken. Door verschill van kleuren
+is het voor gebruikers sneller te zien wat de onderlinge verschillen zijn en wordt het
+vooral duidelijk om welke landen het allemaal gaat.
+
+* Scatterplot
+Ik heb voor de scatterplot gekozen omdat het eigenlijk voor mij de enige visualisatie is
+waarmee ik een mogelijk verband kon aantonen tussen Co2 uitstoot en de levensverwachting of
+temperatuur kon aantonen.
+
+* Barcharts
+De barcharts heb ik gekozen omdat het een goede manier is om exacte nummers naast elkaar
+te zetten en te vergelijken. Ik heb er voor gekozen om 3 verschillende barcharts te maken
+omdat de getallen te veel uiteen lopen om in 1 chart te plaatsen.
+
