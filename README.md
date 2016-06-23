@@ -11,41 +11,58 @@ Thom Mekelenkamp - 11167998
 - MVP
 
 # Doel
-Met mijn visualisatie wil ik aantonen of er daadwerkelijk een verband is tussen
-de levensverwachting, de gemiddelde temperatuur en de co2 uitstoot van een land.
-https://milieudefensie.nl/publicaties/factsheets/informatieblad-luchtvervuiling-en-de-gevolgen-voor-onze-gezondheid
-Het bovenstaande informatieblad van milieudefensie claimt dat "Luchtvervuiling in Nederland zorgt ervoor dat we gemiddeld
-een jaar korter leven". Ik wil gegevens over de levensverwachting en de uitstoot
-van broeikasgassen tegenover elkaar af te zetten in een scatterplot om te kijken
-of daar dan ook een direct verband in zit.
+Met mijn visualisatie wil ik de uitstoot van de Europese landen in kaart brengen
+en op zoek gaan naar een correlatie tussen de uitstoot van de landen en de levensverwachting, en tussen
+de uitstoot en de hoogst gemeten temperatuur.
+
+Het doel is om mensen te informeren over de uitstoot in Europa en te vergelijken of dat
+in de afgelopen 40 jaar invloed heeft gehad op de levensverwachting of de temperatuur.
 
 # Ontwerp
-Mijn visualisatie bestaat uit een wereldkaart die in de uitstoot, levensverwachting
+Op de eerste pagina staat een stukje inleidende tekst over het onderwerp en wat ik met
+de visualisaties wil laten zien en waar ik de inspiratie vandaan heb.
+
+De tweede pagina bestaat uit een wereldkaart die in de uitstoot, levensverwachting
 of de gemiddelde temperatuur van Europese landen. Er kan tussen de 3 variabelen
 worden gekozen om snel inzichtelijk te maken waar bijvoorbeeld de meeste uitstoot is.
+En om voor mensen duidelijk te maken welke landen er allemaal worden meegerekend.
 
-Onder de wereldkaart zal een scatterplot komen waar van verschillende jaren data
-kan worden weegeven. De data van de plot is die van het land waarop geklikt is op de kaart.
-De plot kan naast de data van de verschillende jaren ook nog veranderen tussen:
-levensverwachting tegen co2 en temperatuur tegen co2.
+Onder de wereldkaart zal een scatterplot komen waar van verschillende jaren de uitstoot
+wordt vergeleken met de levensverwachting of de temperatuur. Met een selector kan er
+op de y as worden gewisseld tussen temperatuur en levensverwachting. Daarnaast kan er met een
+selector worden gewisseld tussen de verschillende jaren van de data.
 
-Onder die plot staan twee invoervelden waarin 2 namen van landen kunnen worden
-opgegeven. Deze landen kunnen met elkaar worden vergeleken. Door de vergelijkingsknop
-te drukken zal er een barchart verschijnen met de gegeven van de 2 landen. Met een knop is er
-aan te passen of er gekeken wordt naar de co2 uitstoot, de levensverwachting of de temperatuur.
+Op de derde pagina zijn 2 selectors waarop de gebruiker kan selecteren welke landen
+hij wilt vergelijken. Door dan op de compare knop te drukken verschijnen er 3 barcharts
+met de uitstoot, levensverwachting en temperatuur data van de 2 gekozen landen.
+
+Op de vierde pagina staat de disclaimer met de sources van de data die ik heb gebruikt
+en nog een stukje over de temperatuur data die alleen van de hoofdsteden is en niet van
+het hele land.
 
 # Schets
-![Foto van eerste schets](doc/design.png)
-
+![final screen 1](doc/final_4.png)
+![final screen 2](doc/final_1.png)
+![final screen 3](doc/final_2.png)
+![final screen 4](doc/final_3.png)
+![final screen 5](doc/final_5.png)
 # Data
-De data die ik nodig heb kan ik halen van de WHO databank, Eurostat en van de dataworldbank.
-Deze data zal ik in csv of tsv files zetten en waar mogelijk omzetten naar json voordat
-deze wordt ingeladen.
+
+De volgende bronnen heb ik gebruikt voor data:
+http://data.worldbank.org/indicator/SP.DYN.LE00.IN/countries?display=default
+http://data.worldbank.org/indicator/EN.ATM.CO2E.KT/countries/1W?display=default
+https://weatherspark.com
 
 # Externe bronnen
-Voor mijn visualisatie heb ik de D3 library nodig om de visualisaties te kunnen maken.
-Mogelijk worden daar nog andere libraries aan toegevoegd om extra interactieve features
-toe te voegen, of om het geheel visueel te verbeteren.
+
+Voor de visualisaties heb ik een aantal libraries nodig:
+- jquery
+- bootstrap
+- topojson
+- D3
+- Datamaps
+- D3 tip
+- D3 queue
 
 # Limitaties
 Een limiet voor dit project kan zijn dat ik voor sommige landen maar heel weinig dat
@@ -53,7 +70,11 @@ kan krijgen. Dit limiteerd mij in het aantal soorten grafieken en vergelijkingen
 die de visualisatie kan maken.
 
 # MVP
-Mijn minimal viable product is een kaart waar op kleur geselecteerd de co2 uitstoot in staat
-waarbij je on click op een land de uitstoot tegenover de levensverwachting krijgt.
-En als het mogelijk is om 2 landen met elkaar te vergelijken op co2 uitstoot adhv
-een barchart.
+Mijn minimal viable product is een kaart waar op kleur geselecteerd de co2 uitstoot, de
+levensverwachting en de temperatuur in staan.
+
+Waarbij ik een scatterplot heb die in van tenminste 1 jaar de Co2 data tegenover de
+temperatuur kan weergeven. En waarbij de Y as kan worden veranderd voor de levensverwachting.
+
+En er moeten 2 landen met elkaar vergeleken kunnen worden. Bij deze vergelijking moeten
+er 3 barcharts in beeld komen met de temperatuur, levensverwachting en co2 uitstoot.

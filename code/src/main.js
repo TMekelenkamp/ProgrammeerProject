@@ -4,7 +4,7 @@ scatterData();
 // loads json data for the scatterplot, stores the required data in a list
 // and calls the scatterplot function
 function scatterData(){
-  // console.log( value);
+
   d3.json("../dataset/lifes.json", function(error, data){
     if (error) alert ("Error loading country data");
 

@@ -10,7 +10,6 @@ Universiteit van Amsterdam -->
 
   <!-- bootstrap parts -->
   <script src="../sources/bootstrap/jquery.min.js"></script>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <script src="../sources/bootstrap/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../sources/bootstrap/bootstrap.min.css">
 
@@ -21,13 +20,11 @@ Universiteit van Amsterdam -->
   <script src="../sources/d3/d3.tip.v0.6.3.js"></script>
   <script src="../sources/d3/queue.v1.min.js"></script>
 
-
   <!-- loaded stylesheets -->
   <link rel="stylesheet" type="text/css" href="../stylesheets/main.css"/>
   <link rel="stylesheet" type="text/css" href="../stylesheets/compare.css"/>
   <link rel="stylesheet" type="text/css" href="../stylesheets/map.css"/>
   <link rel="stylesheet" type="text/css" href="../stylesheets/disclaimer.css"/>
-
 
   <!-- loaded scripts -->
   <script src="emissionMap.js"></script>
@@ -38,9 +35,7 @@ Universiteit van Amsterdam -->
   <script src="scatter.js"></script>
   <script src="main.js"></script>
 
-
 </head>
-
 <body>
 
 <!-- classes for the nav bar -->
@@ -67,9 +62,19 @@ Universiteit van Amsterdam -->
            country and the average life expectancy from birth of the highest recorded
            temperature of that year to see if more extreme temperatures will appear over time.
            <br>
-           <br>There also is an option to compare two countries on the same three points as in the
+           <br>There is also an option to compare two countries on the same three points as in the
            other page.
+           <br>
+           <br>The idea for this visualization came from an article of the Dutch enivironment defense.
+           The article stated that the emissions of greenhouse gasses cost the Dutch about 135.000
+           healthy life years every year. That got me interested in these numbers in Europe.
+           For that I created visualization that compare the emission of Co2 with the average life
+           expectancy from birth in Europe and the highest temperatures in the capitals of Europe.
+           To see if there would be a correlation between the emission and the life expectancy.
+           And if higher emissions cause higher temperatures over time.
          </p>
+         <a href="https://milieudefensie.nl/publicaties/factsheets/informatieblad-luchtvervuiling-en-de-gevolgen-voor-onze-gezondheid">
+        Paper of the Dutch enivornment defence</a>
       </div>
     </div>
 
@@ -117,13 +122,13 @@ Universiteit van Amsterdam -->
           <p><strong>The sources of information on this page are from:</strong>
             <br>
             <br><strong>Temperature data:</strong>
-            <br>https://weatherspark.com
+            <br><a href="https://weatherspark.com">Temperature data source</a>
             <br>
             <br><strong>Co2 data:</strong>
-            <br>http://data.worldbank.org/indicator/EN.ATM.CO2E.KT/countries/1W?display=default
+            <br><a href="http://data.worldbank.org/indicator/EN.ATM.CO2E.KT/countries/1W?display=default">Co2 data source</a>
             <br>
             <br><strong>Life expectancy data:</strong>
-            <br>http://data.worldbank.org/indicator/SP.DYN.LE00.IN/countries?display=default
+            <br><a href="http://data.worldbank.org/indicator/SP.DYN.LE00.IN/countries?display=default">Life expectancy data source</a>
             <br>
             <br>The visualizations regarding the temperature of the european countries
             are made with data of the hottest days of the year in the capital city

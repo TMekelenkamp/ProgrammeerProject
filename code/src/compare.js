@@ -4,27 +4,19 @@
 
 // function that compares two countries on temp, life, and co2
 function compare() {
+
+  // create container for the charts and remove if already exists
   id = 'barContainer';
   var div = d3.select('.chart')
       .attr('id', id)
 
   div.selectAll('*').remove('barContainer');
 
-  // // Check if the user entered a valid country name
-  // if (findCountry(country1, data) == undefined || findCountry(country2, data) == undefined){
-  //   alert("Please enter a valid country name");
-  // }
-  //
-  // // check if user entered two identical countries
-  // if (country1 == country2){
-  //   alert("Please enter two different country names")
-  //   return 0
-  // }
-
   // get the input from the user forms
   var country1 = document.getElementById('field1').value;
   var country2 = document.getElementById('field2').value;
 
+  // check for country names with spaces
   if (country1 == "United Kingdom"){
     country1 = "UK";
   }
@@ -45,6 +37,7 @@ function compare() {
     country2 = "Czech";
   }
 
+  // define the used dataset and min and max for the charts
   var max, fill;
   var file;
   var variable;
@@ -67,22 +60,21 @@ function compare() {
       variable = "Life expectancy in years from birth ";
       fill = '#cc0052';
     }
+    // call the getData function to get the data for the 2 countries
     getData(country1, country2, file, max, variable, fill);
   }
-  // call the getData function to get the data for the 2 countries
-  // getData(country1, country2, file, max);
 }
 
-// draws a line graph of the co2 data and another variable data
+// loads the data for the barcharts and stores the data in a usable list
 function getData(country1, country2, file, max, variable, fill){
 
   // load the json file with the data
   d3.json(file, function(error, data){
     if (error) alert ("Error loading country data");
+
   // store the data from the json in a variable
   var data = data.json
 
-  // console.log(data);
   // function that gets the county data that fits the country from the map
   function findCountry(country, data){
     var key = country;
@@ -90,25 +82,11 @@ function getData(country1, country2, file, max, variable, fill){
     return object;
   }
 
-  // make strings lowercase to make sure the program will find it
-  country1 = country1.toLowerCase(country1);
-  country2 = country2.toLowerCase(country2);
-
-  // takes the string and ensures the first letter is uppercase
-  function firstToUpperCase( str ) {
-    return str.substr(0, 1).toUpperCase() + str.substr(1);
-  }
-
-  // make the first letter of the string uppercase to work with json
-  country1 = firstToUpperCase(country1);
-  country2 = firstToUpperCase(country2);
-
   // store the country data in a variable
   var dataset1 = findCountry(country1, data);
   var dataset2 = findCountry(country2, data);
 
-  // create 2 lists for the data to use in the graph
-  var date = ['2010', '2000', '1990', '1980'];
+  // create a list for the data to use in the graph
   var value = [];
 
   // push the variable data into the value list

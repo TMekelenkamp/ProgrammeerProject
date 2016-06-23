@@ -10,7 +10,8 @@ h2 {
 /* position the legend of the map*/
 .datamaps-legend {
   top: 80px;
-  margin-left: 460px;
+  margin-left: 475px;
+  /*margin-right: 475px;*/
 }
 
 /* define the map size and position*/

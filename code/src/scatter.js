@@ -1,4 +1,5 @@
-function drawScatter(data, value){
+// draws scatterplot
+function drawScatter(data){
 
   // create container for updating the plot
   var id = 'scatterContainer';
@@ -25,13 +26,9 @@ function drawScatter(data, value){
     width = 1000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
 
-  // set the color scale for te dots
-  var color = d3.scale.category10();
-
   // define the x axis scale
   var x = d3.scale.sqrt()
     .range([0, width]);
-    // .ticks(10);
 
   // define the y axis scale
   var y = d3.scale.linear()
@@ -127,14 +124,30 @@ function drawScatter(data, value){
     .attr("class", "dot")
     .attr("id", function(d){return d.country;})
     .attr("r", 5)
-    .attr("cx", function(d) { return x(d.emission); })
-    .attr("cy", function(d) { if(choice == "temperature"){return y(d.temp);}else if(choice == "life"){return y(d.life);}})
-    .style("fill", "red")//function(d) { return color(d.country); })
-    .style("display", function(d) {x(d.emission) == "No data" || y(d.temp) == "No data" || y(d.life) == "No data"? "none" : "initial"})
-    .style("display",function(d) { if (isNaN(x(d.emission)) == true || isNaN(y(d.temp)) == true || isNaN(y(d.life)) == true){return "none"}}) //return x(d.emission) == "No data" || y(d.temp) == "No data" ? "none" : "initial");
+    .attr("cx", function(d) { if (isNaN(x(d.emission))){ return x(0);}else{ return x(d.emission);}})
+    .attr("cy", function(d) { if(choice == "temperature"){
+                                if (isNaN(y(d.temp)))
+                                {
+                                  return y(0);
+                                }
+                                else {
+                                  return y(d.temp);
+                                }
+                              }
+                              else if(choice == "life")
+                              {
+                                if (isNaN(y(d.life)))
+                                {
+                                  return y(0);
+                                }
+                                else
+                                {
+                                  return y(d.life);
+                                }
+                              }
+                            })
+    .style("fill", "steelblue")
+    .style("display",function(d) { if (isNaN(x(d.emission)) || isNaN(y(d.temp)) || isNaN(y(d.life))){return "none"}})
     .on('mouseover', tip.show)
-    .on('mouseout', tip.hide)
-    .on('click', function(){
-      console.log(this);
-    })
+    .on('mouseout', tip.hide);
 }

@@ -71,18 +71,18 @@ Ik heb ook een begin gemaakt met de comparison functie waar een gebruiker 2 land
 invoert die hij met elkaar kan vergelijken. Ook heb ik een bootstrap thema toegevoegd.
 Hiermee is het navigeren op de pagina beter en overzichtelijker.
 
-#day 8
+#dag 8
 Veel problemen gehad met het maken van de compare functie. Jsons moeten veranderen
 zodat de data voor verschillende grafieken kon worden geladen. Om de een of andere
 reden kwamen mn barcharts nog steeds niet in beeld. Wel heb ik vast de kaarten aangepast
 in andere kleuren adhv de feedback die ik kreeg bij de vorige presentatie.
 
-# day 9
+# dag 9
 Vandaag eindelijk de compare functie werkend gekregen. De landen kunnen in upper
 en lowercase worden ingegeven. Daarna wordt er met die 2 landen een barchart gemaakt.
 Deze wordt ook aangepast als de landen worden gewisseld.
 
-# day 10
+# dag 10
 In de compare functie moet nog worden aangepast hoe de barcharts worden geupdate.
 Momenteel wordt of alles verwijderd of geen van allen. Bij de presentatie kreeg ik
 goede feedback op mn visualisatie. Voor de invoervelden ga ik dropdowns maken met een
@@ -91,14 +91,14 @@ zoekbalk er in zodat de user niet constant de volledige landnaam moet zoeken.
 #weekend 2
 Kleine aanpassingen gemaakt aan de update functie en de css.
 
-# day 11
+# dag 11
 Implementeren van de scatterplot en het maken van de labels aan en titels aan de barcharts.
 
-# day 12
+# dag 12
 Heb ruzie met het maken van de scatterplot, om de een of andere reden append de plot niet.
 wanneer ik een andere functie op de zelfde div gebruik werkt het wel....
 
-# day 13
+# dag 13
 Scatterplot is in beeld! Met nog steeds een bug er in, de plot komt alleen in beeld
 wanneer ik deze aanroep vanaf de compare functie(wanneer ik de compare knop indruk).
 Roep ik de functie ergens anders aan of on load dan komt er niets in beeld..
@@ -109,17 +109,17 @@ of er gekozen wordt tussen temperatuur of levensverwachting. Wel moet ik nog zor
 dat dots die en datapunt missen niet worden getoond. Ook hebben de barcharts hun
 tooltips.
 
-# day 14
+# dag 14
 alle onderdelen van de scatterplot werken, de onlcick op de map geeft aan hoe welk
 land je hebt geselecteerd van de scatterplot. Ook is er een reset knop om alle dots
 weer zichtbaar te maken. Barchart titels staan er in en de wordt correct vernieuwd.
 
-# day 15
+# dag 15
 kleine aanpassingen voor testen van de scatterplot functies voor de presentatie.
 
 # weekend 3
 
-# day 16
+# dag 16
 input velden van de compare pagina vervangen voor dropdowns. Barcharts krijgen nu
 ook een code mee om de kleur van de 3 verschillende barcharts te veranderen. knoppen
 staan nu in het midden van de pagina met een korte titel er boven.
@@ -132,11 +132,17 @@ Ook de map pagina is nu gecentreerd alleen wilt de datamaps legend daar niet aan
 mee doen... proberen dat morgen te fixen samen met de hoverinfo bug van de
 scatterplot. daarna nummers afronden en wat text schrijven.
 
-# day 17
+# dag 17
 De dots van de scatterplot verdwijnen wanneer er een datapunt mist. hierdoor
 zijn er geen dots meer die tegen de y as aan plakken omdat er een punt mist.
 
-# day 18
+# dag 18
 Selectors opgemaakt zodat ze beter bij de rest van de opmaak passen.
 De discailmer, index en kleine titels geschreven. Navbar moet nog over de hele
-breedte van de pagina komen. ook bezig met verslag. 
+breedte van de pagina komen.
+
+# dag 19
+Laatste aanpassing gemaakt aan de scatterplot om console errors te voorkomen.
+Index text is nu af en de er wordt nu een error naar de user gegeven ipv in de console.
+
+Maken van het verslag, de license en nog wat kleine veranderingen.
